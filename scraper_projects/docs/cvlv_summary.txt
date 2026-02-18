@@ -1,0 +1,32 @@
+CV.LV SCRAPE SUMMARY
+==================================================
+
+IT                                          483 jobs
+Administration                              457 jobs
+Sales                                       412 jobs
+Finance & Accounting                        359 jobs
+Technical Engineering                       337 jobs
+Customer Service                            317 jobs
+Organisation Management                     312 jobs
+Trade Sector                                304 jobs
+Production & Manufacturing                  282 jobs
+Construction & Real Estate                  264 jobs
+Logistics & Transport                       213 jobs
+Banking & Insurance                         195 jobs
+Human Resources                             127 jobs
+Health & Social Care                        124 jobs
+Electronics & Telecom                       119 jobs
+Marketing & Advertising                     117 jobs
+Energetics & Electricity                    108 jobs
+State & Public Admin                        101 jobs
+Education & Science                          89 jobs
+Quality Assurance                            83 jobs
+Law & Legal                                  77 jobs
+Tourism, Hotels & Catering                   61 jobs
+Security & Defence                           52 jobs
+Media & PR                                   40 jobs
+Pharmacy                                     35 jobs
+Agriculture & Environment                    34 jobs
+Forest & Woodcutting                         30 jobs
+
+TOTAL: 5132 jobs

@@ -1,0 +1,82 @@
+{
+  "id": 1514425,
+  "promotions": [
+    {
+      "serviceType": "PREMIUM_LISTING",
+      "category": "INFORMATION_TECHNOLOGY",
+      "activeUntil": "2026-02-24T23:59:59.999+00:00"
+    },
+    {
+      "serviceType": "PREMIUM_LISTING",
+      "category": "BANKING_INSURANCE",
+      "activeUntil": "2026-02-24T23:59:59.999+00:00"
+    },
+    {
+      "serviceType": "PREMIUM_LISTING",
+      "category": "FINANCE_ACCOUNTING",
+      "activeUntil": "2026-02-24T23:59:59.999+00:00"
+    },
+    {
+      "serviceType": "PREMIUM_LISTING",
+      "category": null,
+      "activeUntil": "2026-02-24T23:59:59.999+00:00"
+    }
+  ],
+  "positionTitle": "Senior Data Scientist",
+  "positionContent": "Sludinājums latviešu valodā: https://www.cv.lv/lv/vacancy/1514430 well-equipped office, health insurance, mental health support program, 3 supplementary days, birthday gifts for employees, regular office events and team building activities, hybrid work environment, installation allowance, annual bonus.",
+  "employerId": 19188,
+  "employerName": "CV-Online Recruitment",
+  "logoId": "1a17cb69-8f0d-4fad-b84e-9c09aaa92d74",
+  "domain": 2,
+  "publishDate": "2026-02-17T10:01:21.254+00:00",
+  "renewedDate": "2026-02-17T10:01:21.254+00:00",
+  "expirationDate": "2026-03-10T23:59:59.999+00:00",
+  "workTimes": [
+    2
+  ],
+  "languages": [
+    4
+  ],
+  "categories": [
+    10,
+    23,
+    7
+  ],
+  "keywords": [
+    "bank",
+    "banking",
+    "finances",
+    "finance",
+    "IT",
+    "information technologies",
+    "informācijas tehnoloģijas",
+    "banka",
+    "Cembra",
+    "Cembra Latvia",
+    "senior data scientist",
+    "scientist",
+    "mlops",
+    "devops",
+    "R",
+    "python",
+    "ML",
+    "machine learning",
+    "vecākais datu zinātnieks",
+    "vecākais",
+    "datu",
+    "zinātnieks",
+    "data",
+    "senior"
+  ],
+  "skills": null,
+  "townId": 543,
+  "quickApply": false,
+  "countyId": null,
+  "countryId": 101,
+  "salaryFrom": 3500,
+  "salaryTo": 4500,
+  "hourlySalary": false,
+  "suitableForRefugees": false,
+  "remoteWork": true,
+  "remoteWorkType": "HYBRID"
+}
