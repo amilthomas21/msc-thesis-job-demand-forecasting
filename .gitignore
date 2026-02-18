@@ -1,0 +1,131 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Data Files (too large for git)
+*.csv
+*.xlsx
+*.xls
+*.json
+*.xml
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/*.csv
+data/processed/*.xlsx
+
+# But keep example/template files
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/enrollment/.gitkeep
+
+# Model Files (can be large)
+*.pkl
+*.pickle
+*.h5
+*.model
+*.joblib
+models/*.pkl
+models/*.h5
+
+# Results and Outputs
+results/*.csv
+results/*.png
+results/*.pdf
+
+# Logs
+*.log
+logs/
+
+# Environment Variables
+.env
+.env.local
+config.ini
+secrets.json
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# PDF and Word Documents (thesis drafts - track separately)
+*.pdf
+*.docx
+!docs/thesis_proposal.pdf
+
+# Compressed Files
+*.zip
+*.tar.gz
+*.rar
+
+# System Files
+.cache/
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
