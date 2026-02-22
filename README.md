@@ -1,5 +1,5 @@
 # msc-thesis-job-demand-forecasting
-# AI-Driven Forecasting of Course Demand and Demand-Aware Course Recommendation Using Riga Job-Market Indicators
+# "Job Market Skill Demand Forecasting and Skill-Based Course Recommendation Framework"
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
