@@ -1,165 +1,283 @@
-"""
-SS.lv Page Counter
-This script checks how many pages exist for each job category
-"""
-
 import requests
 from bs4 import BeautifulSoup
+import csv
 import time
+import os
+import logging
+from datetime import datetime
+
+# ── Configuration ────────────────────────────────────────────────────────────
+
+BASE_URL = "https://www.ss.lv"
+OUTPUT_FILE = "data/raw/ss_lv_jobs_full.csv"
+ERROR_LOG   = "data/raw/ss_lv_errors.log"
+MAX_PAGES   = 7          # pages per category (index scrape)
+DELAY_INDEX = 1.5        # seconds between index page requests
+DELAY_DETAIL = 2.0       # seconds between individual job page requests
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
+}
+
+JOB_CATEGORIES = {
+    "programmer":           "Programmer",
+    "computer-technician":  "Computer Technician",
+    "network-administrator":"Network Administrator",
+    "web-designer":         "Web Designer",
+    "linux-admin":          "Linux Administrator",
+    "engineer":             "Engineer",
+    "constructor":          "Constructor",
+    "electrician":          "Electrician",
+    "mechanics":            "Mechanic",
+    "logist":               "Logistician",
+    "driver":               "Driver",
+    "dispatcher":           "Dispatcher",
+    "e-forwarding-agent":   "Forwarding Agent",
+    "bookkeeper":           "Accountant",
+    "ekonomist":            "Economist",
+    "manager":              "Manager",
+    "financial-analyst":    "Financial Analyst",
+    "architect":            "Architect",
+    "designer":             "Designer",
+    "administrator":        "Administrator",
+    "adviser":              "Consultant",
+    "director":             "Director",
+    "expert":               "Specialist",
+}
+
+# ── Logging setup ─────────────────────────────────────────────────────────────
+
+logging.basicConfig(
+    filename=ERROR_LOG,
+    level=logging.ERROR,
+    format="%(asctime)s [%(levelname)s] %(message)s"
+)
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def get_page(url, retries=3):
+    """Fetch a URL with retries. Returns BeautifulSoup or None."""
+    for attempt in range(retries):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=15)
+            if resp.status_code == 200:
+                return BeautifulSoup(resp.content, "html.parser")
+            elif resp.status_code == 404:
+                return None  # listing removed, don't retry
+        except requests.RequestException as e:
+            logging.error(f"Attempt {attempt+1} failed for {url}: {e}")
+            time.sleep(3)
+    return None
 
 
-class SSLVPageCounter:
-    """Check how many pages exist for each category"""
+def load_existing_urls(filepath):
+    """Load already-scraped URLs so we can skip them (resume support)."""
+    seen = set()
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                seen.add(row["url"])
+    return seen
 
-    def __init__(self):
-        self.base_url = "https://www.ss.lv"
-        self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-        }
 
-        # LIMIT HERE (easy to change later)
-        self.max_pages = 7
+# ── Stage 1: Collect job URLs from listing pages ──────────────────────────────
 
-        self.job_categories = {
-            'programmer': 'Programmer',
-            'computer-technician': 'Computer Technician',
-            'network-administrator': 'Network Administrator',
-            'web-designer': 'Web Designer',
-            'linux-admin': 'Linux Administrator',
-            'engineer': 'Engineer',
-            'constructor': 'Constructor',
-            'electrician': 'Electrician',
-            'mechanics': 'Mechanic',
-            'logist': 'Logistician',
-            'driver': 'Driver',
-            'dispatcher': 'Dispatcher',
-            'e-forwarding-agent': 'Forwarding Agent',
-            'bookkeeper': 'Accountant',
-            'ekonomist': 'Economist',
-            'manager': 'Manager',
-            'financial-analyst': 'Financial Analyst',
-            'architect': 'Architect',
-            'designer': 'Designer',
-            'administrator': 'Administrator',
-            'adviser': 'Consultant',
-            'director': 'Director',
-            'expert': 'Specialist',
-        }
+def collect_urls_for_category(slug, category_name):
+    """
+    Scrape listing pages for a category and return a list of unique job URLs.
+    """
+    urls = []
+    seen_on_this_run = set()
 
-    def count_pages_for_category(self, category_slug):
-        """
-        Count pages for a category (maximum 7 pages only)
-        Stops early if an empty page is found.
-        """
-        print(f"  Checking...", end=" ")
+    for page_num in range(1, MAX_PAGES + 1):
+        if page_num == 1:
+            page_url = f"{BASE_URL}/lv/work/are-required/{slug}/"
+        else:
+            page_url = f"{BASE_URL}/lv/work/are-required/{slug}/page{page_num}.html"
 
-        pages_with_jobs = 0
+        soup = get_page(page_url)
+        if soup is None:
+            break
 
-        for page_num in range(1, self.max_pages + 1):
+        # SS.lv job links are in <a> tags whose href matches /msg/lv/work/...
+        links = soup.find_all("a", href=True)
+        job_links = [
+            a["href"] for a in links
+            if "/msg/lv/work/are-required/" in a["href"]
+        ]
 
-            url = f"{self.base_url}/lv/work/are-required/{category_slug}/"
-            if page_num > 1:
-                url += f"page{page_num}.html"
+        if not job_links:
+            break  # empty page, stop paginating
 
-            try:
-                response = requests.get(url, headers=self.headers, timeout=10)
+        new_found = 0
+        for href in job_links:
+            full_url = BASE_URL + href if href.startswith("/") else href
+            if full_url not in seen_on_this_run:
+                seen_on_this_run.add(full_url)
+                urls.append(full_url)
+                new_found += 1
 
-                if response.status_code != 200:
-                    break
+        print(f"    Page {page_num}: {new_found} new URLs found")
 
-                soup = BeautifulSoup(response.content, 'html.parser')
+        if new_found == 0:
+            break  # all duplicates = we've hit the end
 
-                # Try multiple selectors
-                job_rows = soup.find_all('tr', id=lambda x: x and x.startswith('tr_'))
-                if not job_rows:
-                    job_rows = soup.find_all('tr', class_='msg2')
-                if not job_rows:
-                    all_rows = soup.find_all('tr')
-                    job_rows = [row for row in all_rows if row.find('a', href=True)]
+        time.sleep(DELAY_INDEX)
 
-                # If page has real job listings
-                if len(job_rows) > 3:
-                    pages_with_jobs += 1
-                else:
-                    break
+    return urls
 
-                time.sleep(1)
 
-            except Exception as e:
-                print(f"[Error: {str(e)[:30]}]", end=" ")
-                break
+# ── Stage 2: Scrape individual job detail pages ───────────────────────────────
 
-        return pages_with_jobs
+def scrape_job_detail(url):
+    """
+    Visit a single job posting page and extract:
+      - title
+      - posted_date  (format: YYYY-MM-DD if found, else empty string)
+      - description  (cleaned full text)
 
-    def count_all_categories(self):
-        """Count pages for all categories"""
-        print("=" * 70)
-        print("SS.LV PAGE COUNTER - Finding Available Pages")
-        print("=" * 70)
-        print()
+    Returns a dict or None if the page couldn't be parsed.
+    """
+    soup = get_page(url)
+    if soup is None:
+        return None
 
-        results = []
-        total_pages = 0
+    # ── Title ──
+    # SS.lv puts the job title in <h2 class="headline"> or the <title> tag
+    title = ""
+    h2 = soup.find("h2", class_="headline")
+    if h2:
+        title = h2.get_text(strip=True)
+    if not title:
+        # fallback: page <title> minus " - SS.LV"
+        page_title = soup.find("title")
+        if page_title:
+            title = page_title.get_text(strip=True).replace(" - SS.LV", "").strip()
 
-        for i, (slug, name) in enumerate(self.job_categories.items(), 1):
-            print(f"[{i}/{len(self.job_categories)}] {name:30}", end=" ")
+    # ── Posted date ──
+    # SS.lv shows date in a <td> that contains text like "12.02.2025"
+    # It appears inside a table with class "options_list" or near "Datums"
+    posted_date = ""
+    date_label = soup.find(string=lambda t: t and "Datums" in t)  # "Datums" = Date in Latvian
+    if date_label:
+        # The date value is usually in the next <td>
+        parent_td = date_label.find_parent("td")
+        if parent_td:
+            next_td = parent_td.find_next_sibling("td")
+            if next_td:
+                raw_date = next_td.get_text(strip=True)
+                # Convert DD.MM.YYYY → YYYY-MM-DD
+                try:
+                    parsed = datetime.strptime(raw_date, "%d.%m.%Y")
+                    posted_date = parsed.strftime("%Y-%m-%d")
+                except ValueError:
+                    posted_date = raw_date  # keep raw if format differs
 
-            page_count = self.count_pages_for_category(slug)
+    # ── Description ──
+    # Main job text is usually in <div id="msg_div_msg"> or <div class="msg_div_msg">
+    description = ""
+    msg_div = soup.find("div", id="msg_div_msg")
+    if not msg_div:
+        msg_div = soup.find("div", class_="msg_div_msg")
+    if msg_div:
+        description = msg_div.get_text(separator=" ", strip=True)
+    
+    # Clean up whitespace
+    description = " ".join(description.split())
 
-            if page_count > 0:
-                print(f"[OK] {page_count} pages")
-                results.append({
-                    'category': name,
-                    'slug': slug,
-                    'pages': page_count
-                })
-                total_pages += page_count
+    return {
+        "title": title,
+        "posted_date": posted_date,
+        "description": description,
+    }
+
+
+# ── Main orchestrator ─────────────────────────────────────────────────────────
+
+def run_scraper():
+    os.makedirs("data/raw", exist_ok=True)
+
+    # Load already-scraped URLs for resume support
+    existing_urls = load_existing_urls(OUTPUT_FILE)
+    print(f"[RESUME] {len(existing_urls)} URLs already in dataset — will skip these.\n")
+
+    # Open CSV for appending
+    file_exists = os.path.exists(OUTPUT_FILE)
+    csv_file = open(OUTPUT_FILE, "a", newline="", encoding="utf-8")
+    fieldnames = ["category", "title", "url", "posted_date", "scraped_date", "description"]
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+
+    if not file_exists:
+        writer.writeheader()
+
+    scraped_date = datetime.now().strftime("%Y-%m-%d")
+    total_new = 0
+
+    print("=" * 65)
+    print("SS.LV FULL SCRAPER - Collecting job details")
+    print("=" * 65)
+
+    for i, (slug, category_name) in enumerate(JOB_CATEGORIES.items(), 1):
+        print(f"\n[{i}/{len(JOB_CATEGORIES)}] {category_name}")
+        print(f"  Stage 1: Collecting URLs from listing pages...")
+
+        all_urls = collect_urls_for_category(slug, category_name)
+        new_urls = [u for u in all_urls if u not in existing_urls]
+
+        print(f"  Found {len(all_urls)} URLs total, {len(new_urls)} are new.")
+
+        if not new_urls:
+            print(f"  [SKIP] All URLs already scraped.")
+            continue
+
+        print(f"  Stage 2: Scraping {len(new_urls)} job detail pages...")
+
+        cat_success = 0
+        cat_failed  = 0
+
+        for j, url in enumerate(new_urls, 1):
+            detail = scrape_job_detail(url)
+
+            if detail is None:
+                logging.error(f"Failed to scrape: {url}")
+                cat_failed += 1
             else:
-                print(f"[EMPTY] No jobs found")
+                writer.writerow({
+                    "category":     category_name,
+                    "title":        detail["title"],
+                    "url":          url,
+                    "posted_date":  detail["posted_date"],
+                    "scraped_date": scraped_date,
+                    "description":  detail["description"],
+                })
+                csv_file.flush()  # write to disk immediately
+                existing_urls.add(url)
+                cat_success += 1
+                total_new += 1
 
-            time.sleep(2)
+            # Progress update every 10 jobs
+            if j % 10 == 0:
+                print(f"    ... {j}/{len(new_urls)} done ({cat_success} OK, {cat_failed} failed)")
 
-        print()
-        print("=" * 70)
-        print("SUMMARY")
-        print("=" * 70)
-        print(f"\nTotal categories with jobs: {len(results)}")
-        print(f"Total pages across all categories: {total_pages}")
-        print(f"Estimated total jobs: {total_pages * 15} - {total_pages * 20}")
-        print()
+            time.sleep(DELAY_DETAIL)
 
-        # Show detailed breakdown
-        print("CATEGORY BREAKDOWN:")
-        print("-" * 70)
-        print(f"{'Category':<30} {'Pages':<10} {'Est. Jobs':<15}")
-        print("-" * 70)
+        print(f"  [DONE] {cat_success} jobs scraped, {cat_failed} failed for {category_name}")
 
-        for r in sorted(results, key=lambda x: x['pages'], reverse=True):
-            est_jobs = f"{r['pages'] * 15}-{r['pages'] * 20}"
-            print(f"{r['category']:<30} {r['pages']:<10} {est_jobs:<15}")
+    csv_file.close()
 
-        print("-" * 70)
-        print()
-
-        # Save results
-        with open('ss_lv_page_counts.txt', 'w', encoding='utf-8') as f:
-            f.write("SS.LV PAGE COUNT RESULTS\n")
-            f.write("=" * 70 + "\n\n")
-            for r in results:
-                f.write(f"{r['category']}: {r['pages']} pages\n")
-            f.write(f"\nTotal pages: {total_pages}\n")
-            f.write(f"Estimated jobs: {total_pages * 15} - {total_pages * 20}\n")
-
-        print("[SAVED] Results saved to: ss_lv_page_counts.txt")
-        print()
-
-        return results
+    print("\n" + "=" * 65)
+    print(f"SCRAPING COMPLETE")
+    print(f"  New jobs added this run : {total_new}")
+    print(f"  Total in dataset        : {len(existing_urls)}")
+    print(f"  Output file             : {OUTPUT_FILE}")
+    print(f"  Error log               : {ERROR_LOG}")
+    print("=" * 65)
 
 
-# Main execution
 if __name__ == "__main__":
-    counter = SSLVPageCounter()
-    results = counter.count_all_categories()
-
-    print("\n[DONE] Page counting complete!")
-    print("[NEXT] Use these numbers to set max_pages in your scraper")
+    run_scraper()

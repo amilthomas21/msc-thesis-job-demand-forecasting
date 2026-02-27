@@ -1,10 +1,7 @@
 """
-CV.lv Full Scraper - Final Version
-Extracts job listings into a clean CSV matching your thesis data format.
-
-Fields extracted:
-  id, title, employer, salary_from, salary_to, salary_currency,
-  category, remote_work, remote_type, country, publish_date, expiration_date
+CV.lv Full Scraper - Fixed Version
+MSc Thesis: Job Market Skill Demand Forecasting
+Author: Amil Thomas
 """
 
 import requests
@@ -13,9 +10,11 @@ import time
 import math
 import sys
 import csv
+import os
 from bs4 import BeautifulSoup
+from datetime import datetime
 
-sys.stdout.reconfigure(encoding='utf-8')
+sys.stdout.reconfigure(encoding="utf-8")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -24,20 +23,11 @@ HEADERS = {
     "Referer": "https://www.cv.lv/",
 }
 
-BASE_URL = "https://www.cv.lv"
-LIMIT = 20
-
-# CV.lv numeric work time codes
-WORK_TIME_MAP = {
-    1: "Full-time",
-    2: "Full-time with shifts",
-    3: "Part-time",
-    4: "Freelance",
-    5: "Fixed term",
-    6: "Internship",
-    7: "Work after classes",
-    8: "Seasonal",
-}
+BASE_URL    = "https://www.cv.lv"
+OUTPUT_FILE = "data/raw/cv_lv_jobs.csv"
+LIMIT       = 20
+DELAY_LIST  = 1.5
+DELAY_DETAIL= 2.0
 
 CATEGORIES = {
     "INFORMATION_TECHNOLOGY":    "IT",
@@ -45,28 +35,16 @@ CATEGORIES = {
     "SALES":                     "Sales",
     "ORGANISATION_MANAGEMENT":   "Organisation Management",
     "FINANCE_ACCOUNTING":        "Finance & Accounting",
-    "TRADE":                     "Trade Sector",
     "TECHNICAL_ENGINEERING":     "Technical Engineering",
     "CONSTRUCTION_REAL_ESTATE":  "Construction & Real Estate",
     "PRODUCTION_MANUFACTURING":  "Production & Manufacturing",
-    "SERVICE_INDUSTRY":          "Customer Service",
     "LOGISTICS_TRANSPORT":       "Logistics & Transport",
-    "BANKING_INSURANCE":         "Banking & Insurance",
     "MARKETING_ADVERTISING":     "Marketing & Advertising",
-    "HUMAN_RESOURCES":           "Human Resources",
     "ELECTRONICS_TELECOM":       "Electronics & Telecom",
     "HEALTH_SOCIAL_CARE":        "Health & Social Care",
-    "STATE_PUBLIC_ADMIN":        "State & Public Admin",
-    "LAW_LEGAL":                 "Law & Legal",
     "EDUCATION_SCIENCE":         "Education & Science",
     "ENERGETICS_ELECTRICITY":    "Energetics & Electricity",
     "QUALITY_ASSURANCE":         "Quality Assurance",
-    "TOURISM_HOTELS_CATERING":   "Tourism, Hotels & Catering",
-    "MEDIA_PR":                  "Media & PR",
-    "AGRICULTURE_ENVIRONMENTAL": "Agriculture & Environment",
-    "SECURITY_RESCUE_DEFENCE":   "Security & Defence",
-    "PHARMACY":                  "Pharmacy",
-    "FOREST_WOODCUTTING":        "Forest & Woodcutting",
 }
 
 
@@ -85,85 +63,36 @@ def get_next_data(url):
         return None
 
 
-def extract_vacancies(next_data):
+def get_description(job_url):
     try:
-        state = next_data["props"]["pageProps"]
-        redux = state.get("initialReduxState", {})
-        vacancies = (
-            redux.get("vacancies", {}).get("list")
-            or redux.get("search", {}).get("vacancies")
-            or redux.get("search", {}).get("results")
-        )
-        if vacancies:
-            return vacancies
-        search = state.get("searchResults", {})
-        vacancies = search.get("vacancies") or search.get("results")
-        if vacancies:
-            return vacancies
-        init = state.get("initialState", {})
-        vacancies = init.get("vacancies") or init.get("search", {}).get("vacancies")
-        if vacancies:
-            return vacancies
-    except Exception as e:
-        print(f"    [Parse error] {e}")
-    return []
-
-
-def get_total_for_category(next_data, category_key):
-    try:
-        cats = next_data["props"]["pageProps"]["searchResults"]["categories"]
-        return cats.get(category_key, 0)
+        r = requests.get(job_url, headers=HEADERS, timeout=15)
+        if r.status_code != 200:
+            return ""
+        soup = BeautifulSoup(r.content, "html.parser")
+        el = soup.find("div", class_="vacancy-content")
+        if el:
+            for tag in el.find_all(["script", "style", "button", "a"]):
+                tag.decompose()
+            text = el.get_text(separator=" ", strip=True)
+            return " ".join(text.split())
     except Exception:
-        return 0
+        pass
+    return ""
 
 
-def parse_job(job, category_name):
-    """Extract clean fields from a raw vacancy dict."""
-
-    # Work time: list of ints -> readable string
-    work_times = job.get("workTimes", [])
-    work_time_str = ", ".join(
-        WORK_TIME_MAP.get(wt, str(wt)) for wt in work_times
-    ) if work_times else ""
-
-    # Salary
-    salary_from = job.get("salaryFrom") or ""
-    salary_to   = job.get("salaryTo")   or ""
-    # CV.lv salaries are in EUR (no explicit currency field, EUR is standard)
-    salary_currency = "EUR" if (salary_from or salary_to) else ""
-
-    # Remote
-    remote       = job.get("remoteWork", False)
-    remote_type  = job.get("remoteWorkType", "") or ""
-
-    # Dates — strip time, keep date only
-    publish_date    = (job.get("publishDate")    or "")[:10]
-    expiration_date = (job.get("expirationDate") or "")[:10]
-    renewed_date    = (job.get("renewedDate")    or "")[:10]
-
-    return {
-        "id":               job.get("id", ""),
-        "title":            job.get("positionTitle", ""),
-        "employer":         job.get("employerName", ""),
-        "category":         category_name,
-        "salary_from":      salary_from,
-        "salary_to":        salary_to,
-        "salary_currency":  salary_currency,
-        "work_time":        work_time_str,
-        "remote":           remote,
-        "remote_type":      remote_type,
-        "publish_date":     publish_date,
-        "renewed_date":     renewed_date,
-        "expiration_date":  expiration_date,
-        "source":           "cv.lv",
-    }
+def load_existing_ids(filepath):
+    seen = set()
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                url = row.get("url", "")
+                if url:
+                    seen.add(url.split("/")[-1])
+    return seen
 
 
-def scrape_category(category_key, display_name, max_pages=None):
-    """Scrape all pages for one category, return list of parsed job dicts."""
-    all_jobs = []
-
-    # First page
+def scrape_category(category_key, display_name, existing_ids, writer, csv_file, scraped_date):
     url = (f"{BASE_URL}/en/search"
            f"?categories[]={category_key}"
            f"&limit={LIMIT}&offset=0&isHourlySalary=false")
@@ -171,107 +100,111 @@ def scrape_category(category_key, display_name, max_pages=None):
     first = get_next_data(url)
     if not first:
         print("FAILED")
-        return []
+        return 0
 
-    total     = get_total_for_category(first, category_key)
-    vacancies = extract_vacancies(first)
+    try:
+        sr = first["props"]["pageProps"]["searchResults"]
+        total = sr.get("total", 0)
+        vacancies = sr.get("vacancies", [])
+    except Exception:
+        print("PARSE ERROR")
+        return 0
 
-    if total == 0 and not vacancies:
+    if not vacancies:
         print("0 jobs")
-        return []
-
-    for v in vacancies:
-        all_jobs.append(parse_job(v, display_name))
+        return 0
 
     total_pages = math.ceil(total / LIMIT) if total else 1
-    if max_pages:
-        total_pages = min(total_pages, max_pages)
-
     print(f"total={total}, pages={total_pages}", end=" ", flush=True)
+
+    all_vacancies = list(vacancies)
 
     for page in range(1, total_pages):
         offset = page * LIMIT
         url = (f"{BASE_URL}/en/search"
                f"?categories[]={category_key}"
                f"&limit={LIMIT}&offset={offset}&isHourlySalary=false")
-
         data = get_next_data(url)
         if not data:
             break
-
-        vacancies = extract_vacancies(data)
-        if not vacancies:
+        try:
+            page_vacancies = data["props"]["pageProps"]["searchResults"]["vacancies"]
+            if not page_vacancies:
+                break
+            all_vacancies.extend(page_vacancies)
+        except Exception:
             break
+        time.sleep(DELAY_LIST)
 
-        for v in vacancies:
-            all_jobs.append(parse_job(v, display_name))
+    new_count = 0
+    for job in all_vacancies:
+        job_id = str(job.get("id", ""))
+        if job_id in existing_ids:
+            continue
 
-        time.sleep(1.5)
+        job_url = f"{BASE_URL}/en/vacancy/{job_id}"
+        description = get_description(job_url)
+        raw_date = job.get("publishDate", "") or ""
+        posted_date = raw_date[:10]
 
-    print(f"-> {len(all_jobs)} jobs")
-    return all_jobs
+        row = {
+            "category":     display_name,
+            "title":        job.get("positionTitle", ""),
+            "url":          job_url,
+            "posted_date":  posted_date,
+            "scraped_date": scraped_date,
+            "description":  description,
+            "employer":     job.get("employerName", ""),
+            "salary_from":  job.get("salaryFrom", "") or "",
+            "salary_to":    job.get("salaryTo", "") or "",
+            "remote":       job.get("remoteWork", ""),
+            "source":       "cv.lv",
+        }
+
+        writer.writerow(row)
+        csv_file.flush()
+        existing_ids.add(job_id)
+        new_count += 1
+        time.sleep(DELAY_DETAIL)
+
+    print(f"-> {new_count} new jobs")
+    return new_count
 
 
-def scrape_all_categories(max_pages_per_category=None):
-    print("=" * 70)
-    print("CV.LV SCRAPER - Full Run")
-    print("=" * 70)
-    print()
+def run_scraper():
+    os.makedirs("data/raw", exist_ok=True)
+    existing_ids = load_existing_ids(OUTPUT_FILE)
+    print(f"[RESUME] {len(existing_ids)} jobs already in dataset.\n")
 
-    all_jobs = []
-    summary  = []
+    file_exists = os.path.exists(OUTPUT_FILE)
+    csv_file = open(OUTPUT_FILE, "a", newline="", encoding="utf-8")
+    fieldnames = ["category", "title", "url", "posted_date", "scraped_date",
+                  "description", "employer", "salary_from", "salary_to", "remote", "source"]
+    writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+    if not file_exists:
+        writer.writeheader()
+
+    scraped_date = datetime.now().strftime("%Y-%m-%d")
+    total_new = 0
+
+    print("=" * 65)
+    print("CV.LV FULL SCRAPER - Fixed Version with Descriptions")
+    print("=" * 65)
 
     for i, (key, name) in enumerate(CATEGORIES.items(), 1):
-        print(f"[{i:02}/{len(CATEGORIES)}] {name:<40}", end=" ")
-        jobs = scrape_category(key, name, max_pages=max_pages_per_category)
-        all_jobs.extend(jobs)
-        summary.append({"category": name, "jobs": len(jobs)})
+        print(f"\n[{i:02}/{len(CATEGORIES)}] {name:<40}", end=" ")
+        new = scrape_category(key, name, existing_ids, writer, csv_file, scraped_date)
+        total_new += new
         time.sleep(2)
 
-    # ── Save CSV ──────────────────────────────────────────────────────────
-    csv_file = "cvlv_jobs.csv"
-    if all_jobs:
-        fieldnames = list(all_jobs[0].keys())
-        with open(csv_file, "w", newline="", encoding="utf-8-sig") as f:
-            writer = csv.DictWriter(f, fieldnames=fieldnames)
-            writer.writeheader()
-            writer.writerows(all_jobs)
-        print(f"\n[SAVED] {len(all_jobs)} jobs saved to {csv_file}")
+    csv_file.close()
 
-    # ── Save JSON ─────────────────────────────────────────────────────────
-    with open("cvlv_jobs.json", "w", encoding="utf-8") as f:
-        json.dump(all_jobs, f, ensure_ascii=False, indent=2)
-    print(f"[SAVED] JSON backup saved to cvlv_jobs.json")
-
-    # ── Summary ───────────────────────────────────────────────────────────
-    total = sum(s["jobs"] for s in summary)
-    print()
-    print("=" * 70)
-    print("SUMMARY")
-    print("=" * 70)
-    print(f"\n{'Category':<40} {'Jobs':>6}")
-    print("-" * 50)
-    for s in sorted(summary, key=lambda x: x["jobs"], reverse=True):
-        print(f"{s['category']:<40} {s['jobs']:>6}")
-    print("-" * 50)
-    print(f"{'TOTAL':<40} {total:>6}")
-
-    with open("cvlv_summary.txt", "w", encoding="utf-8") as f:
-        f.write("CV.LV SCRAPE SUMMARY\n")
-        f.write("=" * 50 + "\n\n")
-        for s in sorted(summary, key=lambda x: x["jobs"], reverse=True):
-            f.write(f"{s['category']:<40} {s['jobs']:>6} jobs\n")
-        f.write(f"\nTOTAL: {total} jobs\n")
-    print("\n[SAVED] Summary saved to cvlv_summary.txt")
-
-    return all_jobs
+    print("\n" + "=" * 65)
+    print(f"SCRAPING COMPLETE")
+    print(f"  New jobs added : {total_new}")
+    print(f"  Output file    : {OUTPUT_FILE}")
+    print("=" * 65)
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
-
-    # TEST RUN — 2 pages per category (~40 jobs each), fast check
-    # scrape_all_categories(max_pages_per_category=2)
-
-    # FULL RUN — all pages, all categories
-    scrape_all_categories()
+    run_scraper()
