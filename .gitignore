@@ -130,3 +130,7 @@ dmypy.json
 # Pyre
 .pyre/
 msc-thesis-job-demand-forecasting/
+
+data/raw/*.csv
+data/processed/*.csv
+data/**/*.log
