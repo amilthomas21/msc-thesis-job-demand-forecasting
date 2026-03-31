@@ -1,0 +1,498 @@
+university,programme,programme_code,faculty,level,course_code,course_name,ects
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0785,Technical System Vibration and Stability,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0110,Thermodynamics and Gas Dynamics,4
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0004,Mechanics of Composite Materials,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0005,Rotary Machines,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0786,Optimization Methods,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0773,Computer-Aided Analysis of Mechanical Systems of Machines,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0784,Lifting and Transporting Machines,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0121,Analysis and Optimization of Machines Structures and Technological Processes,4
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0780,Basics of Technical Design,3
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,IV0001,Basics of Labour Protection,1
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0778,Theory of Elasticity Viscoelasticity and Plasticity,4
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0774,Shock Theory,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0776,Finite and Boundary Element Methods,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0770,Vehicle Mechanics,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0781,Experimental Mechanics and Technical Diagnostics,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0783,Numerical Analysis for Research of Dynamics of Machines,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0775,Dynamics and Control of Machines,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0769,Modeling and Simulation of Physical Processes,6
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,BM0765,Fundamentals of Patents,3
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,IV0380,Business Economics,3
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,IV0679,Planning of Entrepreneurship,3
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,IV0680,Legal Regulation of Entrepreneurship,3
+RTU,"Engineering Technology, Mechanics and Mechanical Engineering",MMM0,Faculty of Civil and Mechanical Engineering,Master,DE0729,Communication and Presentation Skills,3
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0745,Advanced Data Technologies,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0747,Enterprise Architecture and Requirements Engineering,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0752,Systems Theory,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0740,Business Process Management and Engineering,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0751,e-Business Solutions,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0645,Portfolio Management Technologies,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0739,Knowledge Management Systems,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0754,Service Science Management and Engineering,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0742,Quality Risk and Security Technologies,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0746,Research Methods in Business Informatics,3
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0001,Storage Networking,3
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0748,Network Security Requirements,3
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0743,Artificial Intelligence in Business,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0753,Information Systems Security Engineering,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0738,Enterprise Information Technology Architecture Applications and Integration,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0638,Digital Transformation,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0750,Business Analytics,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0940,Business Analytics with Machine Learning,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0055,Business Law,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0054,Business Ethics,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0052,Entrepreneurship,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0053,Business Communication Skills,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0050,Entrepreneurial Finance,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0051,Leadership,6
+RTU,Business Informatics,DMB0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0049,Corporate Governance,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0478,Artificial Intelligence,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0773,Testing and Software Quality,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0759,Evolution of Object-Oriented Software,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0767,Requirements Engineering,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0936,Specialized Database Technologies,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0935,Computer Systems Scientific Seminar,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0937,Machine Learning Algorithms,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0938,Software Development Project Management Methods,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0939,Information Retrieval,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0941,Deep Machine Learning,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0947,Natural Language Processing,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0942,Computer Vision,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0943,Software for Internet of Things,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0922,High-Level Software Design,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0944,Parallel Functional Programming,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0946,Control of Cyber-Physical Systems,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0945,Model-Based Systems Engineering,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0948,Secure Computer Networks Systems,6
+RTU,Computer Systems,DMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0388,Presentation Skills,3
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0834,Introduction to Cybersecurity,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0798,Reliability of Information Systems,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0828,Information Security and Personal Data Protection,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0831,Cybersecurity Solutions in High Performance Computing Environment,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0832,Control Fundamentals of Critical Infrastructures,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0833,Industrial Safety,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0836,Network Security,12
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0829,Software Security,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0684,Cryptography and Data Security Technologies,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0484,Design of Adaptive Systems,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0830,Engineering Systems Security,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0796,Sociotechnical Systems Modelling,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0642,Data Mining and Knowledge Discovery,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0778,Project Management,3
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0799,Secure E-Commerce Technologies,3
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0835,Data Integration Technologies,3
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0738,Enterprise IT Architecture Applications and Integration,6
+RTU,Cybersecurity Engineering,DMK0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0288,Social Responsibility and Business Ethics,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0682,Corporate Finance,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0855,Time Series Analysis,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0197,Portfolio Theory,8
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0061,Operations Research,4
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0062,Optimization Methods in Finance,7
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0056,Differential Equations in Finance,4
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0244,Bank Risk Management,8
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0198,Monte Carlo Simulations,5
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0853,Numerical Methods in Finance,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0857,Combinatorial Methods in Finance,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0056,Financial Institutions Management,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0057,Investment Management,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0854,Statistical Learning: Theory and Applications in Finance,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0858,Financial Risk Management Software,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0076,FinTech Business Models and Strategy,6
+RTU,Financial Engineering Mathematics,DMN0,"Faculty of Computer Science, Information Technology and Energy",Master,BS0078,FinTech Regulation Theory and Practice,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0802,Introduction to Digital Humanities,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0717,Artificial Intelligence in Humanities,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0815,Study Design and Implementation,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0806,Introduction to Big Data Analytics,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE1095,Digital Ethics and Artificial Intelligence Interaction,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0807,Fundamentals of Computer Science and Programming,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0800,Python Programming Language,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0824,Development of Web-Applications for the Internet,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0816,Graphic Design Technologies,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0814,Audio and Video Data Processing,3
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0623,Marketing and Digital Transformation,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE1002,Theory and Practice of Natural Language Processing,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0804,Computer-Assisted Text Analysis,6
+RTU,Digital Humanities,HMD0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0827,Research Strategies and Writing for Academic Publishing,3
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0673,Interfacing of Sensors and Signal Conditioning,9
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DA1122,Adaptive Systems in Biology,5
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0077,Adaptive Systems in Industrial Electronics,4
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0477,Industrial Sensors and Actuators,6
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0486,Elements of Adaptive Systems,6
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0455,Autonomous Robotic System,3
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0671,Embedded Systems,3
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0489,Fundamentals of Industrial Computer Networks,3
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0669,Adaptive Control of Cyber-Physical Systems,9
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0007,Project Quality and Risk Management,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0222,Microwave Devices and Equipment,5
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0101,Signal Processing Systems,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0225,Digital Electronic Systems Design,5
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0104,Integrated Circuit Design Part 1,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0094,Application of Microprocessors and Microcontrollers,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0092,Simulation of Functional and Logical Circuits,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0210,Software Defined Radio,5
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0118,5G Wireless Technologies,4
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0731,Innovation Management,3
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0103,Electronic Systems for Data Transmission,4
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0843,Physics of Optical Information Processing,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0226,Telecommunications Theory,8
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0209,Fibre Optic Transmission Systems,8
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0847,Transmission Systems,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0686,Design and Maintenance of Telecommunications Networks,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0122,Microwave Telecommunications Systems,7
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0213,Mobile Communications Systems,5
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0677,Telecommunications Marketing,3
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0849,Telecommunications Software,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0840,Encoding and Encryption,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0844,Management of Telecommunications Projects,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0839,Telecommunications Network Management,9
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0113,Computer Technologies in Telecommunications,4
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0561,Enterprise Management,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5205,Environmental Policy and Economics,8
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA0250,Environmental Impact Assessment,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5207,Intersectoral and Interdisciplinary Research Methods,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5204,Environmental Technologies,15
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5226,Energy Conversion and Efficiency,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA0257,Renewable Energy Sources,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5212,Circular Economy and Waste Management,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5208,Energy Efficiency and Energy Audit of Buildings,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5224,Strategic Planning Innovations and Ecomanagement,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5214,Geospatial Analysis for Environmental Engineering,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5210,Environmental Management and Adaptation to Climate Change,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0420,History and Philosophy of Education in a 21st Century Perspective,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0421,Research I,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0441,Quality of Education,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0422,Management and Leadership in Education,9
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0423,Organization of Educational Work and Human Resources in Education,9
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA1222,Teaching and Learning in Digital Era,3
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA1223,Teacher Professional Identity and Pedagogical Mastery,9
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA1224,Education for Sustainable Development,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0625,Business Modeling,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0624,Organizational Theory,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0518,Process Analysis and Management,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0398,Financial Analysis and Planning,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0591,Strategy and Change Management,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0745,Contemporary Research Methods,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0626,Innovation and Technology Transfer,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0650,Industrial Sustainability and Circular Economy,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0515,Talent and Personnel Management,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0649,Engineering Project Management,6
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0729,Customer Relationship Management,3
+RTU,Entrepreneurship and Management,IMU0,Faculty of Engineering Economics and Management,Master,IV0692,Public Communication for Managers,3
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3203,Chemical Industry and Sustainability,12
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3204,Contaminated Site Assessment,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3205,Control and Automation of Chemical Processes,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3206,Manufacturing Plant Design,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3207,Biotechnological Processes and Equipment,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3219,Methodology of Scientific Research,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3220,Microbiology,6
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0134,Contemporary Architecture,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0131,Architecture of Latvia,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0031,Architectural Design Studio,5
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0125,Sustainable Urban Development,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,BM0638,Building Climate Systems in Architecture,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,BM0637,Structural Systems,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0127,Principles of Design Planning and Management,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0133,Historical Building Fabric and Conservation Methods,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0128,Architectural Morphology and Research Methods,3
+RTU,Architecture,AGA0,Institute of Architecture and Design,Master,AD0129,Integrated Urban Design,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0540,Global Markets and Supply Chains,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,DE0654,Logistics Systems Management,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0535,Customs and Security Processes in Supply Chains,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0539,Quality and Environmental Management,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0536,Supply Chain Strategy Management,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0541,Globalization and Integration Processes in the World Economy,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0542,International Business,3
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0530,Global Logistics and Transport,6
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0533,Management of International Transportation,6
+RTU,Logistics and Supply Chain Security,CGH0,Faculty of Engineering Economics and Management,Master,IV0531,Business Logistics,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0874,Total Quality Management,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0949,IT Project Management,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0918,Management Information Systems,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0919,Team Management,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0921,Big Data,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0922,Advanced Software Development Methodologies,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1527,Information Security and Personal Data Protection,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0924,Software Systems Prototyping,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0950,Communication Management,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0951,IT Project Work Management,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0929,Business Analysis,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0953,Introduction to Deep Machine Learning,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0938,Computer Vision,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0934,Cloud Computing Architecture and Applications,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1465,Programming Language Python,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1466,Software Engineering,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1467,Introduction to Data Processing Systems,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1468,Object-Oriented Programming,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1474,Web Programming,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1476,Databases Technologies,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1478,Information Systems Analysis and Design,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0775,Basics of Logistics and Supply Chain Management,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0786,Modelling and Simulation in Logistics,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0787,Optimization Methods in Logistics,3
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0782,Information Technologies in Logistics,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0781,Material Handling Technologies and Automated Solutions,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0784,Supply Chain Network Management Technologies,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0785,Systems Thinking,6
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,IV0645,Human Resources,3
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0777,Logistics Information Systems,9
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0180,Electronic Commerce in Logistics,5
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0788,Systems Analysis,3
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0779,Information Technology Fundamentals,3
+RTU,Adaptronics,EGA0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0227,Large Range Robotic Motion Simulator Adaptive Virtual Reality and AI,8
+RTU,Smart Electronic Systems,EGV0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0215,Data Transmission in Wireless Sensor Networks,5
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0850,Research Seminars,6
+RTU,Telecommunication Technologies and Networks Management,EMH0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0221,Telecommunications and Computer Networks,8
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5222,Experiment Planning and Simulation of Processes,6
+RTU,Environmental Engineering,EMI0,Faculty of Natural Sciences and Technology,Master,DA5209,Ecodesign and Life Cycle Analysis,9
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0516,Introduction to Education Studies,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0518,Research II,6
+RTU,Educational Sciences,GMI0,Liepaja Academy,Master,LA0517,Educational Psychology,6
+RTU,Chemistry and Chemical Technology,KMM0,Faculty of Natural Sciences and Technology,Master,DA3208,Technology of Polymer Materials,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0952,Programming and Mathematics,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0933,Server Virtualization,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0941,Internet of Things I,3
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0780,Material Handling System Design and Analysis,9
+RTU,Logistics and Supply Chain Management,DML0,"Faculty of Computer Science, Information Technology and Energy",Master,DE0783,Transport System Design and Analysis,9
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0042,Design & Technologies Challenges for the 21st Century,5
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0138,Design & Technologies for Sustainability,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0146,Research Design and Analysis,9
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,IV0557,Contemporary Issues of Strategic Management and Marketing,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0141,Design and Technologies Project Management,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0145,Design Marketing,5
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,DA0052,Physics and Electronics of Smart Materials,4
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0140,Development of Smart Products,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0154,Product Life Cycle and Quality System Management,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0147,Technological Systems and Supply Chains Management and Logistics,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0144,Clothing Design 2D and 3D Technologies,6
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0001,User-Centered Design,5
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0048,Design for Change,5
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0051,Parametric 3D Modelling,5
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0029,Integrated Product Design and Development,7
+RTU,Design Engineering,WGT0,Institute of Architecture and Design,Master,AD0149,Networks Planning and Design,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,DA4203,Materials and Technologies,18
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,DA4204,Biomaterials,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,DA4205,Polymer Materials,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,DA4206,Inorganic Materials,3
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,DA4207,Smart Materials,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0062,Financial and Managerial Accounting,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0060,Human Resource Management,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0061,Managerial Statistics,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0063,Strategic Management,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0058,Managerial Economics,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0064,Financial Management,6
+RTU,Material Science and Nanotechnologies,WMM0,Faculty of Natural Sciences and Technology,Master,BS0059,Marketing Management,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0930,Technology Research Methods,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0931,Advanced Topics of Information and Communication Technology,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0954,Deep Metric Training and Generative Racing Networks,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0935,High Performance Computing and Cloud Computing,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1469,Algorithms and Data Structures,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1470,Computer Architecture,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1471,Computer Networks,6
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1472,Internet Technologies,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1473,Cloud Computing,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1475,Mobile Applications,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1477,Software Testing,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1479,Software Projects and Data Quality,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA1481,Security of Information Systems,3
+RTU,Information Technology,DGX0,Liepaja Academy,Master,LA0944,Internet of Things II,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0406,Law,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0407,Environmental Protection Civil Defense and Labour Safety,5
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0408,Economics,6
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0409,International and Commercial Law,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0410,Business Organization,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0028,Mathematics,13
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0132,Discrete Mathematics,5
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0470,Financial Mathematics,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0283,Database Management Systems,6
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0577,Introduction to Artificial Intelligence,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0035,Banking Information Systems,4
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0915,Algorithmization and Programming of Solutions,8
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0917,Programming Languages,5
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0292,Data Models in Database Systems,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0575,WEB Technologies,6
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0411,Financial Management,12
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0285,Systems Analysis and Knowledge Acquisition,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0299,Fundamentals of Computer Systems Design,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0412,Management Accounting and Business Finance,9
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0585,Financial Mobile Application Development,6
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0918,Data Structures and Algorithms,7
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0008,Object-Oriented Programming,4
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0010,Introduction to Computer Architecture,4
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0609,Cloud Computing,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0413,Accounting System,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0414,Risk Management in Finance,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0566,Information Systems Security,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0914,Introduction to Data Analytics,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0421,Taxes and Audit System,5
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0175,Applied Financial Analysis,4
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,IV0189,Project Management,3
+RTU,Finance Management Information Systems,DCP0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,PA0415,Sales Skills and Cross-Cultural Communication,3
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0344,Introduction to Electronics and Telecommunications Branch,6
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,SD0002,Innovative Product Development and Entrepreneurship,9
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0069,Computerization of Mathematical Tasks in Electrical Engineering,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0177,Digital Electronics and Computer Architecture,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0115,Embedded Systems Architecture and Peripherals,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0206,Signal Theory,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0493,Digital Signal Processing,3
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0202,Electron Devices,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0093,Active Electronic Systems,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0089,Analogue Electronics,7
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0114,Electrodynamics and RF Devices,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0219,Fundamentals of Digital Electronic Systems Design using HDL,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0362,The C Programming Language,3
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0048,Digital Devices and Systems,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0201,Computer Studies Basic Course,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0333,Internet of Things Technologies,3
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0099,Analogue and Digital Integrated Circuits,4
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0212,Antenna Design,5
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0497,Design of Printed Circuit Boards,6
+RTU,Smart Electronic Systems,ECV0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0110,Design and Documentation of Electronic Equipment,4
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0678,Internet of Things I,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0623,Programming Languages,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0658,Enterprise Resource Planning,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0660,Human-computer Interaction,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA1325,Programming,8
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA1326,Introduction to Software Engineering,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0624,Software Project Management,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0626,Technologies of Databases I,6
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0627,Cyber Security,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0628,Object-Oriented Programming,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0629,Information Systems Analysis and Design,6
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0630,Quality of Software Projects and Data,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0633,Software Testing,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0661,Computer Organisation,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0662,Computer Networks,6
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0663,Internet Technologies,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0664,Cloud Computing,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0639,Data Processing Systems,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0637,Mobile Application Development,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA1328,Algorithms and Data Structures,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA1329,Web Programming,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA1330,Programming Language Python,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0665,Introduction to Artificial Intelligence,6
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0666,Computer Vision,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0667,Virtual Assistants,3
+RTU,Computer Science,DBW0,Liepaja Academy,Bachelor,LA0944,Internet of Things II,3
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5104,Introduction to Study Field,3
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5109,Introduction to Environmental Research Methods and Theory,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5108,Introduction to Environmental System Dynamics Modeling,8
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5112,Sustainable Development,3
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5105,Air Quality Engineering,9
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5106,Smart Energy Systems,9
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5107,Concepts and Technologies of Waste Management,9
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5114,Theoretical Aspects of Climate Technologies,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5116,Thermal Energy Systems,9
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5118,Demand Side Management,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5115,Basics of Systems Simulation,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5119,Energy Audit,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5122,Environmental Monitoring,6
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA5111,Geographic Information Systems,4
+RTU,Environmental Engineering,EBI0,Faculty of Natural Sciences and Technology,Bachelor,DA1119,Water Treatment Technology,9
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4103,Introduction to Materials Science,3
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4104,Chemistry for Material Scientists,5
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DE0364,Introduction to the Programming Language MATLAB,3
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4106,Programming in Materials Science,3
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4107,Structure and Properties of Materials,4
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4112,Materials Research Methods,6
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4113,Material Selection Ageing and Recycling,9
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA4114,Management of Materials and Processes,6
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,SD0003,Innovative Product Development and Entrepreneurship,6
+RTU,Materials Engineering,WBN0,Faculty of Natural Sciences and Technology,Bachelor,DA0094,Basics of Additive Technologies and 3D Printing,5
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0152,Economics,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0017,Financial Accounting,7
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0220,Managerial Accounting,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0002,Statistics,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0218,Marketing,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0227,Fundamentals of Finances,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0226,Business Planning,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0212,Project Management,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0213,Startup Development,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0701,Information Technology and Business Data Analysis,3
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0702,Business Intelligence Tools and Methods,3
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0762,Business Data Processing Automation,3
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0294,Enterprise Management,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0760,Personnel Management,3
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0288,Social Responsibility and Business Ethics,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0036,Taxes and Duties,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0042,Business Communication,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0035,International Economic Relations,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0050,Strategic Management,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0030,Coaching and Team Management,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0215,Investments,6
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0056,Management Information Systems,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0048,Business Risks,4
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0703,Data-Driven Decision Making,3
+RTU,Entrepreneurship and Management,IBU0,Faculty of Engineering Economics and Management,Bachelor,IV0305,Process Analysis and Control,3
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0006,Marketing Management,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0032,Managerial Accounting,8
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0019,Organizational Behaviour and Management,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0029,Financial Reporting and Analysis,8
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0026,Statistics,8
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0021,Basic Financial Management,8
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0035,Management Accounting and Control,8
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0016,International Commercial Law,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0009,Strategy,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0090,Computer Lab,9
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0004,Research Methods,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0034,Financial Decision Making,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0091,Corporate Governance,6
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0017,International Business,7
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0005,Human Resource Management,6
+RTU,International Business Management,IBX0,Riga Business School,Bachelor,BS0018,Consumer Behaviour,7
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0175,Fundamentals of Computer Science,5
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0286,Numerical Analysis in Engineering Mechanics,3
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0285,Engineering Measurements and Experiments,3
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0051,Methodology and Technique of Design,4
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0003,Machine Dynamics and Strength,3
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0060,Electro Pneumo and Hydro Automatics,4
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,SD0003,Innovative Product Development and Entrepreneurship,6
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0209,Computer-Aided Analysis of Mechanical Systems,5
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0183,Basics of Production Automation,5
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0047,Robot Kinematics,4
+RTU,Engineering Technology Mechanics and Mechanical Engineering,MBM0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0062,Methods and Technology of Process Control,4
+RTU,Aviation Transport,MCA0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0067,Modern Application Packages for Computers,4
+RTU,Aviation Transport,MCA0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0555,Computer Design of Machines and Mechanisms,3
+RTU,Aviation Transport,MCA0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0086,Engineering Diagnostics of an Aircraft,4
+RTU,Aviation Transport,MCA0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0189,Technical Operation of Aircraft and Engines,5
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0221,Fundamentals of Quality Control and Monitoring,5
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0106,Medical Informatics,4
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0415,Medical Equipment Design,6
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0059,Micro- and Nanotechnologies,4
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0071,Computer Systems in Medicine,7
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,DE0340,Electronics in Medicine,3
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0402,Project Management,3
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,BM0421,Business Economics and Fundamentals of Marketing,4
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,DE0424,The Basics of Artificial Intelligence in Medicine,4
+RTU,Medical Engineering and Medical Physics,MCF0,Faculty of Civil and Mechanical Engineering,Bachelor,DE0426,Computerized Decision-Making in Medicine,3
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0283,Database Management Systems,6
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0008,Object-Oriented Programming,4
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0136,Fundamentals of Computer Simulation and Modelling,5
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0010,Introduction to Computer Architecture,4
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0013,Operating Systems,4
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0130,Computer Networks,5
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0144,Fundamentals of Artificial Intelligence,5
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0284,Software Engineering,3
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0285,Systems Analysis and Knowledge Acquisition,3
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0915,Algorithmization and Programming of Solutions,8
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0917,Programming Languages,5
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0918,Data Structures and Algorithms,7
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0332,Introduction to Image Processing,3
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,SD0003,Innovative Product Development and Entrepreneurship,6
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0290,Software Testing Technologies and Principles,3
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0296,Automated Functional and Load Testing of Web Solutions,6
+RTU,Computer Systems,DBD0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0275,Algorithms and Methods of Programming,3
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0344,Introduction to Electronics and Telecommunications Branch,6
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,SD0003,Innovative Product Development and Entrepreneurship,6
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0359,Telecommunications Systems,9
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0177,Digital Electronics and Computer Architecture,5
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0048,Digital Devices and Systems,4
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0357,Telecommunications Theory,9
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0353,Transmission Systems,9
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0049,Telecommunications and Computer Networks,4
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0078,Distributed Systems in Telecommunications,4
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0362,The C Programming Language,3
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0201,Computer Studies Basic Course,5
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0182,Network Databases and Databanks,5
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0086,Computer Network Monitoring Diagnostics and Maintenance,4
+RTU,Telecommunication Technologies and Data Transmission Engineering,EBG0,"Faculty of Computer Science, Information Technology and Energy",Bachelor,DE0355,Mobile Network Architecture,6

@@ -1,0 +1,322 @@
+skill,frequency,job_coverage_pct,demand_tier,total_courses,tsi_courses,rtu_courses,coverage_status,rank
+Excel,471,18.04,High Demand,71,34,39,Well Covered,1
+Communication skills,358,13.71,High Demand,44,9,35,Well Covered,2
+Customer service,328,12.56,High Demand,2,0,2,Partially Covered,3
+Accounting,295,11.3,High Demand,34,1,33,Well Covered,4
+Financial analysis,248,9.5,High Demand,50,3,47,Well Covered,5
+Attention to detail,214,8.2,High Demand,14,3,11,Well Covered,6
+Project management,202,7.74,High Demand,22,8,15,Well Covered,7
+Software development,199,7.62,High Demand,10,6,4,Well Covered,8
+Compliance,198,7.58,High Demand,6,1,5,Well Covered,9
+ERP,191,7.32,High Demand,12,8,4,Well Covered,10
+Civil engineering,174,6.66,High Demand,64,11,53,Well Covered,11
+Supply chain,170,6.51,High Demand,25,0,25,Well Covered,12
+Technical drawing,162,6.2,High Demand,0,0,0,GAP — Not Covered,13
+Mechanical engineering,158,6.05,High Demand,205,3,202,Well Covered,14
+Reporting,152,5.82,High Demand,9,4,5,Well Covered,15
+Teamwork,136,5.21,High Demand,40,4,36,Well Covered,16
+SQL,128,4.9,High Demand,13,7,6,Well Covered,17
+Electrical engineering,127,4.86,High Demand,15,4,11,Well Covered,18
+Leadership,123,4.71,High Demand,168,20,150,Well Covered,19
+Digital marketing,120,4.6,High Demand,3,2,1,Well Covered,20
+Tax,106,4.06,High Demand,6,4,2,Well Covered,21
+Analytical thinking,104,3.98,High Demand,2,1,1,Partially Covered,22
+Web development,102,3.91,High Demand,5,2,3,Well Covered,23
+Procurement,101,3.87,High Demand,25,0,25,Well Covered,24
+Warehouse management,91,3.49,High Demand,29,3,26,Well Covered,25
+Industrial automation,86,3.29,High Demand,4,0,4,Well Covered,26
+UX design,84,3.22,High Demand,11,1,10,Well Covered,27
+Unit testing,77,2.95,High Demand,8,4,4,Well Covered,28
+AutoCAD,71,2.72,High Demand,134,24,110,Well Covered,29
+Electronics,67,2.57,High Demand,14,3,11,Well Covered,30
+KPI,66,2.53,High Demand,7,4,3,Well Covered,31
+CRM,65,2.49,High Demand,2,1,1,Partially Covered,32
+Problem solving,62,2.37,High Demand,5,5,0,Well Covered,33
+Cloud & DevOps,56,2.14,High Demand,2,1,1,Partially Covered,34
+Inventory management,52,1.99,High Demand,25,0,25,Well Covered,35
+Agile,52,1.99,High Demand,4,4,0,Well Covered,36
+Git,51,1.95,High Demand,27,5,22,Well Covered,37
+CI/CD,49,1.88,High Demand,5,2,3,Well Covered,38
+AWS,47,1.8,High Demand,8,5,3,Well Covered,39
+Data analysis,46,1.76,High Demand,15,8,7,Well Covered,40
+1C,45,1.72,High Demand,0,0,0,GAP — Not Covered,41
+Docker,45,1.72,High Demand,0,0,0,GAP — Not Covered,42
+Microsoft Office,44,1.69,High Demand,0,0,0,GAP — Not Covered,43
+Technical support,44,1.69,High Demand,0,0,0,GAP — Not Covered,44
+Machine learning,44,1.69,High Demand,36,22,14,Well Covered,45
+Linux,41,1.57,High Demand,9,9,1,Well Covered,46
+Financial reporting,40,1.53,High Demand,3,0,3,Well Covered,47
+Statistics,40,1.53,High Demand,41,16,25,Well Covered,48
+Customs,39,1.49,High Demand,1,0,1,Partially Covered,49
+PostgreSQL,38,1.46,High Demand,13,7,6,Well Covered,50
+React,38,1.46,High Demand,42,27,15,Well Covered,51
+Network administration,38,1.46,High Demand,0,0,0,GAP — Not Covered,52
+IoT,37,1.42,High Demand,13,3,10,Well Covered,53
+Python,37,1.42,High Demand,18,4,14,Well Covered,54
+SAP,34,1.3,High Demand,12,8,4,Well Covered,55
+Azure,34,1.3,High Demand,6,3,3,Well Covered,56
+Time management,34,1.3,High Demand,1,0,1,Partially Covered,57
+DevOps,34,1.3,High Demand,5,2,3,Well Covered,58
+BIM,32,1.23,High Demand,6,6,0,Well Covered,59
+Troubleshooting,32,1.23,High Demand,0,0,0,GAP — Not Covered,60
+JIRA,30,1.15,High Demand,10,5,6,Well Covered,61
+PHP,29,1.11,High Demand,9,4,5,Well Covered,62
+Java,28,1.07,High Demand,22,7,15,Well Covered,63
+Risk management,27,1.03,High Demand,5,0,5,Well Covered,64
+Microsoft Word,26,1.0,High Demand,0,0,0,GAP — Not Covered,65
+JavaScript,24,0.92,High Demand,8,4,4,Well Covered,66
+HTML,24,0.92,High Demand,8,4,4,Well Covered,67
+IT infrastructure,24,0.92,High Demand,0,0,0,GAP — Not Covered,68
+CSS,23,0.88,High Demand,8,4,4,Well Covered,69
+Contract management,22,0.84,High Demand,0,0,0,GAP — Not Covered,70
+Kubernetes,22,0.84,High Demand,0,0,0,GAP — Not Covered,71
+PowerPoint,22,0.84,High Demand,0,0,0,GAP — Not Covered,72
+.NET,21,0.8,High Demand,8,7,1,Well Covered,73
+MySQL,21,0.8,High Demand,13,7,6,Well Covered,74
+Power BI,21,0.8,High Demand,2,0,2,Partially Covered,75
+Information security,21,0.8,High Demand,23,2,21,Well Covered,76
+Cybersecurity,20,0.77,High Demand,41,5,36,Well Covered,77
+Graphic design,20,0.77,High Demand,11,3,8,Well Covered,78
+Scrum,19,0.73,High Demand,4,4,0,Well Covered,79
+Stakeholder management,19,0.73,High Demand,63,20,44,Well Covered,80
+SEO,18,0.69,High Demand,9,4,5,Well Covered,81
+UI/UX,18,0.69,High Demand,101,45,56,Well Covered,82
+Controlling,17,0.65,Moderate Demand,0,0,0,GAP — Not Covered,83
+VPN,17,0.65,Moderate Demand,72,12,61,Well Covered,84
+C#,17,0.65,Moderate Demand,14,0,14,Well Covered,85
+Version control,17,0.65,Moderate Demand,2,2,0,Partially Covered,86
+Forecasting,16,0.61,Moderate Demand,0,0,0,GAP — Not Covered,87
+Data analytics,16,0.61,Moderate Demand,9,3,6,Well Covered,88
+DNS,16,0.61,Moderate Demand,38,10,29,Well Covered,89
+REST API,16,0.61,Moderate Demand,3,3,0,Well Covered,90
+Negotiation,16,0.61,Moderate Demand,92,5,87,Well Covered,91
+Budgeting,16,0.61,Moderate Demand,1,1,0,Partially Covered,92
+Presentation skills,16,0.61,Moderate Demand,4,0,4,Well Covered,93
+Revit,16,0.61,Moderate Demand,8,3,5,Well Covered,94
+GDPR compliance,15,0.57,Moderate Demand,5,4,1,Well Covered,95
+TypeScript,15,0.57,Moderate Demand,8,4,4,Well Covered,96
+Figma,14,0.54,Moderate Demand,1,0,1,Partially Covered,97
+Oracle,14,0.54,Moderate Demand,13,7,6,Well Covered,98
+Grafana,13,0.5,Moderate Demand,0,0,0,GAP — Not Covered,99
+Confluence,13,0.5,Moderate Demand,0,0,0,GAP — Not Covered,100
+Bash,13,0.5,Moderate Demand,2,2,0,Partially Covered,101
+Social media marketing,13,0.5,Moderate Demand,0,0,0,GAP — Not Covered,102
+GitHub,13,0.5,Moderate Demand,0,0,0,GAP — Not Covered,103
+Photoshop,13,0.5,Moderate Demand,3,1,2,Well Covered,104
+Debugging,13,0.5,Moderate Demand,19,5,14,Well Covered,105
+Google Analytics,13,0.5,Moderate Demand,8,4,4,Well Covered,106
+Firewall,13,0.5,Moderate Demand,7,2,5,Well Covered,107
+Microsoft Dynamics,13,0.5,Moderate Demand,0,0,0,GAP — Not Covered,108
+Google Ads,12,0.46,Moderate Demand,0,0,0,GAP — Not Covered,109
+Business analysis,12,0.46,Moderate Demand,49,12,37,Well Covered,110
+Prometheus,12,0.46,Moderate Demand,0,0,0,GAP — Not Covered,111
+GCP,12,0.46,Moderate Demand,0,0,0,GAP — Not Covered,112
+Content creation,12,0.46,Moderate Demand,0,0,0,GAP — Not Covered,113
+GitLab,11,0.42,Moderate Demand,0,0,0,GAP — Not Covered,114
+CEH,11,0.42,Moderate Demand,0,0,0,GAP — Not Covered,115
+Process improvement,11,0.42,Moderate Demand,3,0,3,Well Covered,116
+Redis,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,117
+IT support,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,118
+Spring,10,0.38,Moderate Demand,1,1,0,Partially Covered,119
+SolidWorks,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,120
+IFRS,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,121
+RESTful,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,122
+Jenkins,10,0.38,Moderate Demand,0,0,0,GAP — Not Covered,123
+PLC programming,10,0.38,Moderate Demand,10,2,8,Well Covered,124
+Node.js,10,0.38,Moderate Demand,2,1,1,Partially Covered,125
+C++,10,0.38,Moderate Demand,157,24,137,Well Covered,126
+Ansible,9,0.34,Moderate Demand,0,0,0,GAP — Not Covered,127
+Data science,9,0.34,Moderate Demand,16,10,6,Well Covered,128
+OOP,9,0.34,Moderate Demand,6,4,2,Well Covered,129
+PowerShell,9,0.34,Moderate Demand,0,0,0,GAP — Not Covered,130
+Payroll,9,0.34,Moderate Demand,0,0,0,GAP — Not Covered,131
+Microservices,9,0.34,Moderate Demand,50,15,35,Well Covered,132
+Tableau,9,0.34,Moderate Demand,3,2,1,Well Covered,133
+Angular,8,0.31,Moderate Demand,1,1,0,Partially Covered,134
+Illustrator,8,0.31,Moderate Demand,0,0,0,GAP — Not Covered,135
+Symfony,8,0.31,Moderate Demand,0,0,0,GAP — Not Covered,136
+RabbitMQ,8,0.31,Moderate Demand,0,0,0,GAP — Not Covered,137
+Auditing,8,0.31,Moderate Demand,4,1,3,Well Covered,138
+Terraform,7,0.27,Moderate Demand,1,0,1,Partially Covered,139
+Critical thinking,7,0.27,Moderate Demand,6,4,2,Well Covered,140
+Kafka,7,0.27,Moderate Demand,0,0,0,GAP — Not Covered,141
+NoSQL,7,0.27,Moderate Demand,14,10,4,Well Covered,142
+Elasticsearch,7,0.27,Moderate Demand,31,15,16,Well Covered,143
+Event-driven,7,0.27,Moderate Demand,0,0,0,GAP — Not Covered,144
+Data engineering,7,0.27,Moderate Demand,0,0,0,GAP — Not Covered,145
+ETL,7,0.27,Moderate Demand,4,2,2,Well Covered,146
+Spring Boot,7,0.27,Moderate Demand,0,0,0,GAP — Not Covered,147
+Business Intelligence,7,0.27,Moderate Demand,56,29,28,Well Covered,148
+JSON,7,0.27,Moderate Demand,0,0,0,GAP — Not Covered,149
+Lean,7,0.27,Moderate Demand,3,1,2,Well Covered,150
+LLM,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,151
+MS Project,6,0.23,Moderate Demand,3,2,1,Well Covered,152
+Kanban,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,153
+Looker,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,154
+MSSQL,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,155
+Microsoft 365,6,0.23,Moderate Demand,7,4,3,Well Covered,156
+Snowflake,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,157
+Code review,6,0.23,Moderate Demand,1,0,1,Partially Covered,158
+Cisco,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,159
+Hyper-V,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,160
+Laravel,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,161
+ITIL,6,0.23,Moderate Demand,1,0,1,Partially Covered,162
+SOAP,6,0.23,Moderate Demand,0,0,0,GAP — Not Covered,163
+Data modeling,6,0.23,Moderate Demand,4,3,1,Well Covered,164
+Design patterns,6,0.23,Moderate Demand,9,0,9,Well Covered,165
+Kotlin,5,0.19,Moderate Demand,6,1,5,Well Covered,166
+ASP.NET,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,167
+GitLab CI,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,168
+GAAP,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,169
+Unix,5,0.19,Moderate Demand,1,1,0,Partially Covered,170
+VMware,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,171
+ISO 27001,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,172
+Market research,5,0.19,Moderate Demand,1,1,0,Partially Covered,173
+Data visualization,5,0.19,Moderate Demand,2,1,1,Partially Covered,174
+MongoDB,5,0.19,Moderate Demand,6,5,1,Well Covered,175
+MariaDB,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,176
+Premiere Pro,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,177
+SOC,5,0.19,Moderate Demand,10,8,2,Well Covered,178
+Salesforce,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,179
+Virtualization,5,0.19,Moderate Demand,2,1,1,Partially Covered,180
+XML,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,181
+Ruby,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,182
+Internal audit,5,0.19,Moderate Demand,3,0,3,Well Covered,183
+GitHub Actions,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,184
+Ubuntu,5,0.19,Moderate Demand,0,0,0,GAP — Not Covered,185
+Email marketing,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,186
+Embedded systems,4,0.15,Moderate Demand,8,3,5,Well Covered,187
+PMP,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,188
+InDesign,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,189
+Infrastructure as code,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,190
+Active Directory,4,0.15,Moderate Demand,1,0,1,Partially Covered,191
+A/B testing,4,0.15,Moderate Demand,4,0,4,Well Covered,192
+MLOps,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,193
+Generative AI,4,0.15,Moderate Demand,2,1,1,Partially Covered,194
+Data warehousing,4,0.15,Moderate Demand,44,27,18,Well Covered,195
+Qlik,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,196
+Database design,4,0.15,Moderate Demand,13,7,6,Well Covered,197
+PyTorch,4,0.15,Moderate Demand,1,1,0,Partially Covered,198
+Prototyping,4,0.15,Moderate Demand,5,4,1,Well Covered,199
+Ruby on Rails,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,200
+TCP/IP,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,201
+Windows Server,4,0.15,Moderate Demand,1,0,1,Partially Covered,202
+Vue,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,203
+SIEM,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,204
+DHCP,4,0.15,Moderate Demand,0,0,0,GAP — Not Covered,205
+BigQuery,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,206
+After Effects,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,207
+API development,3,0.11,Moderate Demand,3,3,0,Well Covered,208
+Copywriting,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,209
+Bootstrap,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,210
+User research,3,0.11,Moderate Demand,7,5,2,Well Covered,211
+Webpack,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,212
+Swift,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,213
+Apache,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,214
+Six Sigma,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,215
+ArgoCD,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,216
+TMS,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,217
+Django,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,218
+Regression,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,219
+Requirements gathering,3,0.11,Moderate Demand,2,1,1,Partially Covered,220
+Selenium,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,221
+Change management,3,0.11,Moderate Demand,3,0,3,Well Covered,222
+Object-oriented programming,3,0.11,Moderate Demand,6,4,2,Well Covered,223
+FastAPI,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,224
+Microsoft Azure,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,225
+Helm,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,226
+TensorFlow,3,0.11,Moderate Demand,1,1,0,Partially Covered,227
+Golang,3,0.11,Moderate Demand,162,35,132,Well Covered,228
+Google Cloud,3,0.11,Moderate Demand,6,3,3,Well Covered,229
+MATLAB,3,0.11,Moderate Demand,1,0,1,Partially Covered,230
+Nginx,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,231
+Next.js,3,0.11,Moderate Demand,0,0,0,GAP — Not Covered,232
+Microservices architecture,3,0.11,Moderate Demand,6,0,6,Well Covered,233
+Network security,3,0.11,Moderate Demand,2,0,2,Partially Covered,234
+scikit-learn,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,235
+TDD,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,236
+Shell scripting,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,237
+SEM,2,0.08,Moderate Demand,6,4,2,Well Covered,238
+Refactoring,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,239
+Serverless,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,240
+3D modeling,2,0.08,Moderate Demand,6,2,4,Well Covered,241
+jQuery,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,242
+Zero trust,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,243
+Vue.js,2,0.08,Moderate Demand,1,1,0,Partially Covered,244
+Program management,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,245
+Kaizen,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,246
+IT Administration,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,247
+Hadoop,2,0.08,Moderate Demand,4,2,3,Well Covered,248
+Bitbucket,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,249
+Blender,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,250
+Help desk,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,251
+GraphQL,2,0.08,Moderate Demand,5,5,0,Well Covered,252
+Airflow,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,253
+Adobe XD,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,254
+Integration testing,2,0.08,Moderate Demand,5,0,5,Well Covered,255
+Video editing,2,0.08,Moderate Demand,1,0,1,Partially Covered,256
+SSO,2,0.08,Moderate Demand,1,0,1,Partially Covered,257
+SRE,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,258
+Query optimization,2,0.08,Moderate Demand,3,2,1,Well Covered,259
+Office 365,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,260
+Flask,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,261
+CAM,2,0.08,Moderate Demand,2,2,0,Partially Covered,262
+OAuth,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,263
+NumPy,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,264
+Motion graphics,2,0.08,Moderate Demand,2,1,1,Partially Covered,265
+Encryption,2,0.08,Moderate Demand,39,4,35,Well Covered,266
+CircleCI,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,267
+CISSP,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,268
+Cassandra,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,269
+CentOS,2,0.08,Moderate Demand,0,0,0,GAP — Not Covered,270
+HubSpot,1,0.04,Low Demand,0,0,0,GAP — Not Covered,271
+Hugging Face,1,0.04,Low Demand,0,0,0,GAP — Not Covered,272
+Customer relations,1,0.04,Low Demand,2,0,2,Partially Covered,273
+Amazon Web Services,1,0.04,Low Demand,2,2,0,Partially Covered,274
+Load balancing,1,0.04,Low Demand,1,0,1,Partially Covered,275
+JUnit,1,0.04,Low Demand,0,0,0,GAP — Not Covered,276
+Juniper,1,0.04,Low Demand,0,0,0,GAP — Not Covered,277
+Identity management,1,0.04,Low Demand,1,0,1,Partially Covered,278
+InfluxDB,1,0.04,Low Demand,0,0,0,GAP — Not Covered,279
+Kibana,1,0.04,Low Demand,0,0,0,GAP — Not Covered,280
+Content marketing,1,0.04,Low Demand,46,6,40,Well Covered,281
+BPMN,1,0.04,Low Demand,0,0,0,GAP — Not Covered,282
+Trello,1,0.04,Low Demand,0,0,0,GAP — Not Covered,283
+Test-driven development,1,0.04,Low Demand,0,0,0,GAP — Not Covered,284
+Tailwind CSS,1,0.04,Low Demand,0,0,0,GAP — Not Covered,285
+Groovy,1,0.04,Low Demand,0,0,0,GAP — Not Covered,286
+Natural language processing,1,0.04,Low Demand,3,0,3,Well Covered,287
+Marketing automation,1,0.04,Low Demand,2,0,2,Partially Covered,288
+Freight,1,0.04,Low Demand,0,0,0,GAP — Not Covered,289
+Oracle ERP,1,0.04,Low Demand,0,0,0,GAP — Not Covered,290
+Demand planning,1,0.04,Low Demand,26,0,26,Well Covered,291
+Delivery management,1,0.04,Low Demand,0,0,0,GAP — Not Covered,292
+Deep learning,1,0.04,Low Demand,3,1,2,Well Covered,293
+Decision making,1,0.04,Low Demand,4,1,3,Well Covered,294
+Databricks,1,0.04,Low Demand,0,0,0,GAP — Not Covered,295
+Public relations,1,0.04,Low Demand,2,0,2,Partially Covered,296
+PL/SQL,1,0.04,Low Demand,0,0,0,GAP — Not Covered,297
+Prince2,1,0.04,Low Demand,0,0,0,GAP — Not Covered,298
+PKI,1,0.04,Low Demand,0,0,0,GAP — Not Covered,299
+Pandas,1,0.04,Low Demand,0,0,0,GAP — Not Covered,300
+FEA,1,0.04,Low Demand,4,4,0,Well Covered,301
+Facebook Ads,1,0.04,Low Demand,0,0,0,GAP — Not Covered,302
+Feature engineering,1,0.04,Low Demand,0,0,0,GAP — Not Covered,303
+DynamoDB,1,0.04,Low Demand,0,0,0,GAP — Not Covered,304
+SAP FI,1,0.04,Low Demand,0,0,0,GAP — Not Covered,305
+Sketch,1,0.04,Low Demand,0,0,0,GAP — Not Covered,306
+SOLID principles,1,0.04,Low Demand,0,0,0,GAP — Not Covered,307
+Design thinking,1,0.04,Low Demand,16,3,13,Well Covered,308
+Disaster recovery,1,0.04,Low Demand,0,0,0,GAP — Not Covered,309
+Redshift,1,0.04,Low Demand,0,0,0,GAP — Not Covered,310
+Resource planning,1,0.04,Low Demand,2,0,2,Partially Covered,311
+Rust,1,0.04,Low Demand,0,0,0,GAP — Not Covered,312
+Web design,1,0.04,Low Demand,54,32,22,Well Covered,313
+Supply chain management,1,0.04,Low Demand,24,0,24,Well Covered,314
+Data pipeline,1,0.04,Low Demand,0,0,0,GAP — Not Covered,315
+Sprint planning,1,0.04,Low Demand,1,0,1,Partially Covered,316
+Statistical analysis,1,0.04,Low Demand,2,1,1,Partially Covered,317
+Vulnerability assessment,1,0.04,Low Demand,2,0,2,Partially Covered,318
+UI design,1,0.04,Low Demand,10,0,10,Well Covered,319
+WebSocket,1,0.04,Low Demand,0,0,0,GAP — Not Covered,320
+gRPC,1,0.04,Low Demand,0,0,0,GAP — Not Covered,321

@@ -1,0 +1,346 @@
+skill,skill_category,frequency,job_count,job_coverage_pct,rank,demand_tier
+Latvian,Languages,1451,1451,55.57,1,High Demand
+English,Languages,1224,1224,46.88,2,High Demand
+Excel,Business & Finance,471,471,18.04,3,High Demand
+Communication skills,Professional Skills,358,358,13.71,4,High Demand
+Customer service,Professional Skills,328,328,12.56,5,High Demand
+Accounting,Business & Finance,295,295,11.3,6,High Demand
+Financial analysis,Business & Finance,248,248,9.5,7,High Demand
+Attention to detail,Professional Skills,214,214,8.2,8,High Demand
+Project management,Project Management,202,202,7.74,9,High Demand
+Software development,Software Engineering,199,199,7.62,10,High Demand
+Compliance,Business & Finance,198,198,7.58,11,High Demand
+Russian,Languages,196,196,7.51,12,High Demand
+ERP,Business & Finance,191,191,7.32,13,High Demand
+Civil engineering,Engineering,174,174,6.66,14,High Demand
+Supply chain,Logistics & Supply Chain,170,170,6.51,15,High Demand
+Technical drawing,Engineering,162,162,6.2,16,High Demand
+Mechanical engineering,Engineering,158,158,6.05,17,High Demand
+Reporting,Business & Finance,152,152,5.82,18,High Demand
+Teamwork,Professional Skills,136,136,5.21,19,High Demand
+SQL,Databases,128,128,4.9,20,High Demand
+Electrical engineering,Engineering,127,127,4.86,21,High Demand
+Leadership,Professional Skills,123,123,4.71,22,High Demand
+Digital marketing,Marketing & Communication,120,120,4.6,23,High Demand
+Tax,Business & Finance,106,106,4.06,24,High Demand
+Analytical thinking,Professional Skills,104,104,3.98,25,High Demand
+Web development,Web Development,102,102,3.91,26,High Demand
+Procurement,Business & Finance,101,101,3.87,27,High Demand
+Warehouse management,Logistics & Supply Chain,91,91,3.49,28,High Demand
+Industrial automation,Engineering,86,86,3.29,29,High Demand
+UX design,Design & Creative,84,84,3.22,30,High Demand
+Unit testing,Software Engineering,77,77,2.95,31,High Demand
+AutoCAD,Engineering,71,71,2.72,32,High Demand
+Electronics,Engineering,67,67,2.57,33,High Demand
+KPI,Business & Finance,66,66,2.53,34,High Demand
+CRM,Marketing & Communication,65,65,2.49,35,High Demand
+Problem solving,Professional Skills,62,62,2.37,36,High Demand
+Cloud & DevOps,Cloud & DevOps,56,56,2.14,37,High Demand
+Inventory management,Logistics & Supply Chain,52,52,1.99,38,High Demand
+Agile,Software Engineering,52,52,1.99,39,High Demand
+Git,Software Engineering,51,51,1.95,40,High Demand
+German,Languages,50,50,1.91,41,High Demand
+CI/CD,Cloud & DevOps,49,49,1.88,42,High Demand
+AWS,Cloud & DevOps,47,47,1.8,43,High Demand
+Data analysis,Data Science & AI,46,46,1.76,44,High Demand
+1C,Business & Finance,45,45,1.72,45,High Demand
+Docker,Cloud & DevOps,45,45,1.72,46,High Demand
+Microsoft Office,Business & Finance,44,44,1.69,47,High Demand
+Technical support,IT Administration,44,44,1.69,48,High Demand
+Machine learning,Data Science & AI,44,44,1.69,49,High Demand
+Linux,Cloud & DevOps,41,41,1.57,50,High Demand
+Financial reporting,Business & Finance,40,40,1.53,51,High Demand
+Statistics,Data Science & AI,40,40,1.53,52,High Demand
+Customs,Logistics & Supply Chain,39,39,1.49,53,High Demand
+PostgreSQL,Databases,38,38,1.46,54,High Demand
+React,Web Development,38,38,1.46,55,High Demand
+Network administration,Networking & Security,38,38,1.46,56,High Demand
+IoT,Engineering,37,37,1.42,57,High Demand
+Python,Programming Languages,37,37,1.42,58,High Demand
+SAP,Business & Finance,34,34,1.3,59,High Demand
+Azure,Cloud & DevOps,34,34,1.3,60,High Demand
+Time management,Professional Skills,34,34,1.3,61,High Demand
+DevOps,Cloud & DevOps,34,34,1.3,62,High Demand
+BIM,Engineering,32,32,1.23,63,High Demand
+Troubleshooting,IT Administration,32,32,1.23,64,High Demand
+JIRA,Software Engineering,30,30,1.15,65,High Demand
+PHP,Programming Languages,29,29,1.11,66,High Demand
+Java,Programming Languages,28,28,1.07,67,High Demand
+Risk management,Project Management,27,27,1.03,68,High Demand
+Microsoft Word,Business & Finance,26,26,1.0,69,High Demand
+JavaScript,Programming Languages,24,24,0.92,70,High Demand
+HTML,Web Development,24,24,0.92,71,High Demand
+IT infrastructure,IT Administration,24,24,0.92,72,High Demand
+CSS,Web Development,23,23,0.88,73,High Demand
+Contract management,Business & Finance,22,22,0.84,74,High Demand
+Kubernetes,Cloud & DevOps,22,22,0.84,75,High Demand
+PowerPoint,Business & Finance,22,22,0.84,76,High Demand
+.NET,Web Development,21,21,0.8,77,High Demand
+MySQL,Databases,21,21,0.8,78,High Demand
+Power BI,Data Science & AI,21,21,0.8,79,High Demand
+Information security,Networking & Security,21,21,0.8,80,High Demand
+Cybersecurity,Networking & Security,20,20,0.77,81,High Demand
+Graphic design,Design & Creative,20,20,0.77,82,High Demand
+Spanish,Languages,19,19,0.73,83,High Demand
+Scrum,Software Engineering,19,19,0.73,84,High Demand
+Stakeholder management,Project Management,19,19,0.73,85,High Demand
+SEO,Marketing & Communication,18,18,0.69,86,High Demand
+UI/UX,Design & Creative,18,18,0.69,87,High Demand
+Controlling,Business & Finance,17,17,0.65,88,Moderate Demand
+VPN,Networking & Security,17,17,0.65,89,Moderate Demand
+C#,Programming Languages,17,17,0.65,90,Moderate Demand
+Version control,Software Engineering,17,17,0.65,91,Moderate Demand
+Forecasting,Business & Finance,16,16,0.61,92,Moderate Demand
+Data analytics,Data Science & AI,16,16,0.61,93,Moderate Demand
+DNS,Networking & Security,16,16,0.61,94,Moderate Demand
+ISO 9001,Certifications,16,16,0.61,95,Moderate Demand
+REST API,Web Development,16,16,0.61,96,Moderate Demand
+Negotiation,Professional Skills,16,16,0.61,97,Moderate Demand
+Budgeting,Business & Finance,16,16,0.61,98,Moderate Demand
+Presentation skills,Professional Skills,16,16,0.61,99,Moderate Demand
+Revit,Engineering,16,16,0.61,100,Moderate Demand
+GDPR compliance,Networking & Security,15,15,0.57,101,Moderate Demand
+TypeScript,Programming Languages,15,15,0.57,102,Moderate Demand
+Figma,Design & Creative,14,14,0.54,103,Moderate Demand
+Oracle,Databases,14,14,0.54,104,Moderate Demand
+Grafana,Cloud & DevOps,13,13,0.5,105,Moderate Demand
+Confluence,Software Engineering,13,13,0.5,106,Moderate Demand
+Bash,Programming Languages,13,13,0.5,107,Moderate Demand
+Social media marketing,Marketing & Communication,13,13,0.5,108,Moderate Demand
+GitHub,Software Engineering,13,13,0.5,109,Moderate Demand
+Photoshop,Design & Creative,13,13,0.5,110,Moderate Demand
+Debugging,Software Engineering,13,13,0.5,111,Moderate Demand
+Google Analytics,Marketing & Communication,13,13,0.5,112,Moderate Demand
+Firewall,Networking & Security,13,13,0.5,113,Moderate Demand
+Microsoft Dynamics,Business & Finance,13,13,0.5,114,Moderate Demand
+Google Ads,Marketing & Communication,12,12,0.46,115,Moderate Demand
+Business analysis,Business & Finance,12,12,0.46,116,Moderate Demand
+Prometheus,Cloud & DevOps,12,12,0.46,117,Moderate Demand
+GCP,Cloud & DevOps,12,12,0.46,118,Moderate Demand
+Content creation,Marketing & Communication,12,12,0.46,119,Moderate Demand
+GitLab,Software Engineering,11,11,0.42,120,Moderate Demand
+Norwegian,Languages,11,11,0.42,121,Moderate Demand
+CEH,Networking & Security,11,11,0.42,122,Moderate Demand
+Process improvement,Business & Finance,11,11,0.42,123,Moderate Demand
+Redis,Databases,10,10,0.38,124,Moderate Demand
+IT support,IT Administration,10,10,0.38,125,Moderate Demand
+Spring,Web Development,10,10,0.38,126,Moderate Demand
+SolidWorks,Engineering,10,10,0.38,127,Moderate Demand
+IFRS,Business & Finance,10,10,0.38,128,Moderate Demand
+RESTful,Web Development,10,10,0.38,129,Moderate Demand
+Jenkins,Cloud & DevOps,10,10,0.38,130,Moderate Demand
+French,Languages,10,10,0.38,131,Moderate Demand
+PLC programming,Engineering,10,10,0.38,132,Moderate Demand
+Node.js,Web Development,10,10,0.38,133,Moderate Demand
+C++,Programming Languages,10,10,0.38,134,Moderate Demand
+Ansible,Cloud & DevOps,9,9,0.34,135,Moderate Demand
+Data science,Data Science & AI,9,9,0.34,136,Moderate Demand
+Polish,Languages,9,9,0.34,137,Moderate Demand
+OOP,Software Engineering,9,9,0.34,138,Moderate Demand
+PowerShell,Programming Languages,9,9,0.34,139,Moderate Demand
+Payroll,Business & Finance,9,9,0.34,140,Moderate Demand
+Lithuanian,Languages,9,9,0.34,141,Moderate Demand
+Microservices,Cloud & DevOps,9,9,0.34,142,Moderate Demand
+Tableau,Data Science & AI,9,9,0.34,143,Moderate Demand
+Angular,Web Development,8,8,0.31,144,Moderate Demand
+Italian,Languages,8,8,0.31,145,Moderate Demand
+Illustrator,Design & Creative,8,8,0.31,146,Moderate Demand
+Symfony,Web Development,8,8,0.31,147,Moderate Demand
+RabbitMQ,Software Engineering,8,8,0.31,148,Moderate Demand
+Estonian,Languages,8,8,0.31,149,Moderate Demand
+Auditing,Business & Finance,8,8,0.31,150,Moderate Demand
+Terraform,Cloud & DevOps,7,7,0.27,151,Moderate Demand
+Critical thinking,Professional Skills,7,7,0.27,152,Moderate Demand
+Kafka,Software Engineering,7,7,0.27,153,Moderate Demand
+NoSQL,Databases,7,7,0.27,154,Moderate Demand
+Elasticsearch,Databases,7,7,0.27,155,Moderate Demand
+Event-driven,Software Engineering,7,7,0.27,156,Moderate Demand
+Product Owner,Certifications,7,7,0.27,157,Moderate Demand
+Data engineering,Data Science & AI,7,7,0.27,158,Moderate Demand
+Swedish,Languages,7,7,0.27,159,Moderate Demand
+ETL,Databases,7,7,0.27,160,Moderate Demand
+Spring Boot,Web Development,7,7,0.27,161,Moderate Demand
+Business Intelligence,Data Science & AI,7,7,0.27,162,Moderate Demand
+Ukrainian,Languages,7,7,0.27,163,Moderate Demand
+JSON,Web Development,7,7,0.27,164,Moderate Demand
+Lean,Logistics & Supply Chain,7,7,0.27,165,Moderate Demand
+LLM,Data Science & AI,6,6,0.23,166,Moderate Demand
+MS Project,Project Management,6,6,0.23,167,Moderate Demand
+Kanban,Software Engineering,6,6,0.23,168,Moderate Demand
+Looker,Data Science & AI,6,6,0.23,169,Moderate Demand
+MSSQL,Databases,6,6,0.23,170,Moderate Demand
+Microsoft 365,IT Administration,6,6,0.23,171,Moderate Demand
+Snowflake,Databases,6,6,0.23,172,Moderate Demand
+CPA,Certifications,6,6,0.23,173,Moderate Demand
+Code review,Software Engineering,6,6,0.23,174,Moderate Demand
+Cisco,Networking & Security,6,6,0.23,175,Moderate Demand
+Hyper-V,IT Administration,6,6,0.23,176,Moderate Demand
+Laravel,Web Development,6,6,0.23,177,Moderate Demand
+ITIL,IT Administration,6,6,0.23,178,Moderate Demand
+SOAP,Web Development,6,6,0.23,179,Moderate Demand
+Data modeling,Databases,6,6,0.23,180,Moderate Demand
+Design patterns,Software Engineering,6,6,0.23,181,Moderate Demand
+Kotlin,Programming Languages,5,5,0.19,182,Moderate Demand
+ASP.NET,Web Development,5,5,0.19,183,Moderate Demand
+GitLab CI,Cloud & DevOps,5,5,0.19,184,Moderate Demand
+GAAP,Business & Finance,5,5,0.19,185,Moderate Demand
+Unix,Cloud & DevOps,5,5,0.19,186,Moderate Demand
+VMware,IT Administration,5,5,0.19,187,Moderate Demand
+ISO 27001,Networking & Security,5,5,0.19,188,Moderate Demand
+Market research,Marketing & Communication,5,5,0.19,189,Moderate Demand
+Data visualization,Data Science & AI,5,5,0.19,190,Moderate Demand
+MongoDB,Databases,5,5,0.19,191,Moderate Demand
+MariaDB,Databases,5,5,0.19,192,Moderate Demand
+Premiere Pro,Design & Creative,5,5,0.19,193,Moderate Demand
+SOC,Networking & Security,5,5,0.19,194,Moderate Demand
+Salesforce,Marketing & Communication,5,5,0.19,195,Moderate Demand
+Virtualization,IT Administration,5,5,0.19,196,Moderate Demand
+XML,Web Development,5,5,0.19,197,Moderate Demand
+Ruby,Programming Languages,5,5,0.19,198,Moderate Demand
+Internal audit,Business & Finance,5,5,0.19,199,Moderate Demand
+GitHub Actions,Cloud & DevOps,5,5,0.19,200,Moderate Demand
+Ubuntu,Cloud & DevOps,5,5,0.19,201,Moderate Demand
+Email marketing,Marketing & Communication,4,4,0.15,202,Moderate Demand
+Embedded systems,Engineering,4,4,0.15,203,Moderate Demand
+PMP,Project Management,4,4,0.15,204,Moderate Demand
+InDesign,Design & Creative,4,4,0.15,205,Moderate Demand
+Infrastructure as code,Cloud & DevOps,4,4,0.15,206,Moderate Demand
+Active Directory,Networking & Security,4,4,0.15,207,Moderate Demand
+A/B testing,Data Science & AI,4,4,0.15,208,Moderate Demand
+ACCA,Certifications,4,4,0.15,209,Moderate Demand
+MLOps,Data Science & AI,4,4,0.15,210,Moderate Demand
+Generative AI,Data Science & AI,4,4,0.15,211,Moderate Demand
+Data warehousing,Databases,4,4,0.15,212,Moderate Demand
+Qlik,Data Science & AI,4,4,0.15,213,Moderate Demand
+Database design,Databases,4,4,0.15,214,Moderate Demand
+PyTorch,Data Science & AI,4,4,0.15,215,Moderate Demand
+Prototyping,Design & Creative,4,4,0.15,216,Moderate Demand
+Ruby on Rails,Web Development,4,4,0.15,217,Moderate Demand
+TCP/IP,Networking & Security,4,4,0.15,218,Moderate Demand
+Windows Server,IT Administration,4,4,0.15,219,Moderate Demand
+Vue,Web Development,4,4,0.15,220,Moderate Demand
+SIEM,Networking & Security,4,4,0.15,221,Moderate Demand
+DHCP,Networking & Security,4,4,0.15,222,Moderate Demand
+BigQuery,Databases,3,3,0.11,223,Moderate Demand
+After Effects,Design & Creative,3,3,0.11,224,Moderate Demand
+API development,Software Engineering,3,3,0.11,225,Moderate Demand
+Copywriting,Marketing & Communication,3,3,0.11,226,Moderate Demand
+Bootstrap,Web Development,3,3,0.11,227,Moderate Demand
+User research,Design & Creative,3,3,0.11,228,Moderate Demand
+Webpack,Web Development,3,3,0.11,229,Moderate Demand
+Swift,Programming Languages,3,3,0.11,230,Moderate Demand
+Apache,Cloud & DevOps,3,3,0.11,231,Moderate Demand
+Six Sigma,Logistics & Supply Chain,3,3,0.11,232,Moderate Demand
+ArgoCD,Cloud & DevOps,3,3,0.11,233,Moderate Demand
+TMS,Logistics & Supply Chain,3,3,0.11,234,Moderate Demand
+Django,Web Development,3,3,0.11,235,Moderate Demand
+Regression,Data Science & AI,3,3,0.11,236,Moderate Demand
+Requirements gathering,Business & Finance,3,3,0.11,237,Moderate Demand
+Scrum Master,Certifications,3,3,0.11,238,Moderate Demand
+Selenium,Software Engineering,3,3,0.11,239,Moderate Demand
+Change management,Project Management,3,3,0.11,240,Moderate Demand
+Portuguese,Languages,3,3,0.11,241,Moderate Demand
+Object-oriented programming,Software Engineering,3,3,0.11,242,Moderate Demand
+FastAPI,Web Development,3,3,0.11,243,Moderate Demand
+Microsoft Azure,Cloud & DevOps,3,3,0.11,244,Moderate Demand
+Helm,Cloud & DevOps,3,3,0.11,245,Moderate Demand
+TensorFlow,Data Science & AI,3,3,0.11,246,Moderate Demand
+Golang,Programming Languages,3,3,0.11,247,Moderate Demand
+Google Cloud,Cloud & DevOps,3,3,0.11,248,Moderate Demand
+MATLAB,Programming Languages,3,3,0.11,249,Moderate Demand
+Nginx,Cloud & DevOps,3,3,0.11,250,Moderate Demand
+Next.js,Web Development,3,3,0.11,251,Moderate Demand
+Microservices architecture,Software Engineering,3,3,0.11,252,Moderate Demand
+Network security,Networking & Security,3,3,0.11,253,Moderate Demand
+Dutch,Languages,2,2,0.08,254,Moderate Demand
+scikit-learn,Data Science & AI,2,2,0.08,255,Moderate Demand
+TDD,Software Engineering,2,2,0.08,256,Moderate Demand
+Shell scripting,Programming Languages,2,2,0.08,257,Moderate Demand
+SEM,Marketing & Communication,2,2,0.08,258,Moderate Demand
+Refactoring,Software Engineering,2,2,0.08,259,Moderate Demand
+Serverless,Cloud & DevOps,2,2,0.08,260,Moderate Demand
+3D modeling,Design & Creative,2,2,0.08,261,Moderate Demand
+jQuery,Web Development,2,2,0.08,262,Moderate Demand
+Zero trust,Networking & Security,2,2,0.08,263,Moderate Demand
+Vue.js,Web Development,2,2,0.08,264,Moderate Demand
+Program management,Project Management,2,2,0.08,265,Moderate Demand
+Kaizen,Logistics & Supply Chain,2,2,0.08,266,Moderate Demand
+CompTIA,Certifications,2,2,0.08,267,Moderate Demand
+IT Administration,IT Administration,2,2,0.08,268,Moderate Demand
+Hadoop,Data Science & AI,2,2,0.08,269,Moderate Demand
+Bitbucket,Software Engineering,2,2,0.08,270,Moderate Demand
+Blender,Design & Creative,2,2,0.08,271,Moderate Demand
+Help desk,IT Administration,2,2,0.08,272,Moderate Demand
+GraphQL,Web Development,2,2,0.08,273,Moderate Demand
+Airflow,Data Science & AI,2,2,0.08,274,Moderate Demand
+Adobe XD,Design & Creative,2,2,0.08,275,Moderate Demand
+Integration testing,Software Engineering,2,2,0.08,276,Moderate Demand
+Video editing,Design & Creative,2,2,0.08,277,Moderate Demand
+SSO,Networking & Security,2,2,0.08,278,Moderate Demand
+SRE,Cloud & DevOps,2,2,0.08,279,Moderate Demand
+Query optimization,Databases,2,2,0.08,280,Moderate Demand
+Office 365,IT Administration,2,2,0.08,281,Moderate Demand
+Flask,Web Development,2,2,0.08,282,Moderate Demand
+CISA,Certifications,2,2,0.08,283,Moderate Demand
+CAM,Engineering,2,2,0.08,284,Moderate Demand
+OAuth,Web Development,2,2,0.08,285,Moderate Demand
+NumPy,Data Science & AI,2,2,0.08,286,Moderate Demand
+Finnish,Languages,2,2,0.08,287,Moderate Demand
+Motion graphics,Design & Creative,2,2,0.08,288,Moderate Demand
+Encryption,Networking & Security,2,2,0.08,289,Moderate Demand
+CircleCI,Cloud & DevOps,2,2,0.08,290,Moderate Demand
+CISSP,Networking & Security,2,2,0.08,291,Moderate Demand
+Cassandra,Databases,2,2,0.08,292,Moderate Demand
+CentOS,Cloud & DevOps,2,2,0.08,293,Moderate Demand
+HubSpot,Marketing & Communication,1,1,0.04,294,Low Demand
+Hugging Face,Data Science & AI,1,1,0.04,295,Low Demand
+Customer relations,Professional Skills,1,1,0.04,296,Low Demand
+Amazon Web Services,Cloud & DevOps,1,1,0.04,297,Low Demand
+Load balancing,Cloud & DevOps,1,1,0.04,298,Low Demand
+JUnit,Software Engineering,1,1,0.04,299,Low Demand
+Juniper,Networking & Security,1,1,0.04,300,Low Demand
+Identity management,Networking & Security,1,1,0.04,301,Low Demand
+InfluxDB,Databases,1,1,0.04,302,Low Demand
+Kibana,Cloud & DevOps,1,1,0.04,303,Low Demand
+Content marketing,Marketing & Communication,1,1,0.04,304,Low Demand
+BPMN,Business & Finance,1,1,0.04,305,Low Demand
+Trello,Software Engineering,1,1,0.04,306,Low Demand
+Test-driven development,Software Engineering,1,1,0.04,307,Low Demand
+Tailwind CSS,Web Development,1,1,0.04,308,Low Demand
+Groovy,Programming Languages,1,1,0.04,309,Low Demand
+Natural language processing,Data Science & AI,1,1,0.04,310,Low Demand
+Marketing automation,Marketing & Communication,1,1,0.04,311,Low Demand
+Freight,Logistics & Supply Chain,1,1,0.04,312,Low Demand
+Oracle ERP,Business & Finance,1,1,0.04,313,Low Demand
+Demand planning,Logistics & Supply Chain,1,1,0.04,314,Low Demand
+Delivery management,Project Management,1,1,0.04,315,Low Demand
+Deep learning,Data Science & AI,1,1,0.04,316,Low Demand
+Decision making,Professional Skills,1,1,0.04,317,Low Demand
+Databricks,Data Science & AI,1,1,0.04,318,Low Demand
+Public relations,Marketing & Communication,1,1,0.04,319,Low Demand
+PL/SQL,Databases,1,1,0.04,320,Low Demand
+CISM,Certifications,1,1,0.04,321,Low Demand
+Prince2,Project Management,1,1,0.04,322,Low Demand
+PKI,Networking & Security,1,1,0.04,323,Low Demand
+Pandas,Data Science & AI,1,1,0.04,324,Low Demand
+FEA,Engineering,1,1,0.04,325,Low Demand
+Facebook Ads,Marketing & Communication,1,1,0.04,326,Low Demand
+Feature engineering,Data Science & AI,1,1,0.04,327,Low Demand
+DynamoDB,Databases,1,1,0.04,328,Low Demand
+SAP FI,Business & Finance,1,1,0.04,329,Low Demand
+Sketch,Design & Creative,1,1,0.04,330,Low Demand
+SOLID principles,Software Engineering,1,1,0.04,331,Low Demand
+Design thinking,Design & Creative,1,1,0.04,332,Low Demand
+Disaster recovery,IT Administration,1,1,0.04,333,Low Demand
+Redshift,Databases,1,1,0.04,334,Low Demand
+Resource planning,Project Management,1,1,0.04,335,Low Demand
+Rust,Programming Languages,1,1,0.04,336,Low Demand
+Web design,Design & Creative,1,1,0.04,337,Low Demand
+Supply chain management,Logistics & Supply Chain,1,1,0.04,338,Low Demand
+Data pipeline,Data Science & AI,1,1,0.04,339,Low Demand
+Sprint planning,Project Management,1,1,0.04,340,Low Demand
+Statistical analysis,Data Science & AI,1,1,0.04,341,Low Demand
+Vulnerability assessment,Networking & Security,1,1,0.04,342,Low Demand
+UI design,Design & Creative,1,1,0.04,343,Low Demand
+WebSocket,Web Development,1,1,0.04,344,Low Demand
+gRPC,Software Engineering,1,1,0.04,345,Low Demand
