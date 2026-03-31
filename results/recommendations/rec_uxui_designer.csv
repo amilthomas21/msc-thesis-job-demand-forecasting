@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,AD0001,User-Centered Design,Design Engineering,0.9508199861940001,0.23796364264432834,0.7467990858902986,11,4
+2,TSI,B-184-05,User Experience (UX) Design,Computer Science,1.0,0.12841659829871754,0.7385249794896154,7,4
+3,RTU,AD0146,Research Design and Analysis,Design Engineering,0.7270584970191284,0.26594412539401524,0.5933124861277688,12,3
+4,RTU,AD0141,Design and Technologies Project Management,Design Engineering,0.596907668731136,0.47864761000043177,0.5920481173656975,14,3
+5,RTU,AD0145,Design Marketing,Design Engineering,0.6529829743926943,0.23684096895375448,0.5475437778824734,11,3
+6,RTU,AD0048,Design for Change,Design Engineering,0.6372261253102969,0.23796364264432834,0.540002155448447,11,3
+7,RTU,DE0816,Graphic Design Technologies,Digital Humanities,0.8112287122613915,0.11399455935057645,0.5398127239358687,6,2
+8,TSI,B-33-04,Web Aplication Construction,Computer Science,0.4081148695155651,0.43469061703873224,0.5344646198694023,22,4
+9,TSI,B-77-04,Web Aplication Development Tols,Computer Science,0.20425004866071145,0.9078112181009543,0.524468389760642,20,3
+10,RTU,AD0138,Design & Technologies for Sustainability,Design Engineering,0.601015454599215,0.24210889934798568,0.5231403971040032,12,3

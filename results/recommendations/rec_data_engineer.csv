@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,LA0921,Big Data,Information Technology,1.0,0.3577874692344229,0.6740029074369935,5,1
+2,RTU,DE0806,Introduction to Big Data Analytics,Digital Humanities,0.6958561605370597,0.49276739064726455,0.6290916307960425,10,2
+3,TSI,B-08-04,Database and Data Banks,Computer Science,0.4914080231658333,0.7147545230795802,0.593463701840124,17,2
+4,TSI,M-546-04,Big Data,Computer Science,0.8209283657090803,0.31180102767822443,0.5706711578246741,4,1
+5,TSI,B-734-02,Individual project -2,Computer Science,0.32212093384299084,0.8317284856859104,0.5439123459606019,23,2
+6,RTU,DE0292,Data Models in Database Systems,Finance Management Information Systems,0.3813822304813459,0.7110410639492206,0.5373367677587725,11,2
+7,TSI,M-26-04,Modern Database Technologies,Computer Science,0.3464589508849831,0.7409646357787469,0.528852199509449,14,2
+8,TSI,B-74-01,Cloud Computing & Internet of Things,Computer Science,0.3595605063284297,0.6498121680556156,0.5080572369142329,24,2
+9,RTU,DE0182,Network Databases and Databanks,Telecommunication Technologies and Data Transmission Engineering,0.19630771436197988,0.8959367848352693,0.5002682259649041,14,2
+10,TSI,B-737-01,Database procesing,Computer Science,0.37171492520103083,0.5210933114555896,0.4755187893705256,14,2

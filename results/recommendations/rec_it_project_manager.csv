@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,TSI,B-324-04,Information Technology Project Management,Computer Science,0.8859608005954259,0.7191156785698865,0.818715103868679,15,4
+2,TSI,M-405-01,Student Project,Computer Science,0.46931256710251235,1.0,0.7346562835512562,15,5
+3,RTU,IV0212,Project Management,Entrepreneurship and Management,0.9732072250058346,0.34457446349151516,0.6699759515503718,5,2
+4,RTU,IV0007,Project Quality and Risk Management,Adaptronics,1.0,0.2548037480029362,0.656441124400881,5,2
+5,RTU,LA0949,IT Project Management,Information Technology,0.9413833037740145,0.2913338227039164,0.6380917986981822,6,2
+6,RTU,PA0414,Risk Management in Finance,Finance Management Information Systems,0.9346726044026183,0.2645191934021331,0.626692060221949,5,2
+7,RTU,DE0858,Financial Risk Management Software,Financial Engineering Mathematics,0.7308504486832255,0.5770974567122933,0.6185544613553007,6,2
+8,TSI,B-17-04,Software Project Management,Computer Science,0.8112923732429442,0.4258819465434604,0.6134107705845102,12,2
+9,RTU,IV0649,Engineering Project Management,Entrepreneurship and Management,0.8568282824206646,0.34457446349151516,0.6117864802577868,5,2
+10,RTU,IV0189,Project Management,Finance Management Information Systems,0.8156044021459098,0.40960317803013946,0.6106831544819968,7,2

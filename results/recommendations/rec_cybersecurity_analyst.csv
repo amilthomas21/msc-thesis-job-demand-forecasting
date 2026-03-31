@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,DE0836,Network Security,Cybersecurity Engineering,1.0,0.1553175871151604,0.746595276134548,8,4
+2,RTU,DE0828,Information Security and Personal Data Protection,Cybersecurity Engineering,0.6003901563939881,0.45830994429811306,0.637688061486428,8,4
+3,RTU,LA1527,Information Security and Personal Data Protection,Information Technology,0.5033510034634618,0.40196036098277127,0.5722636100265623,8,4
+4,RTU,DE0748,Network Security Requirements,Business Informatics,0.6970849957660545,0.09059113087784446,0.5257198371463807,11,3
+5,RTU,DE0684,Cryptography and Data Security Technologies,Cybersecurity Engineering,0.3707256633310378,0.4474286454510126,0.46959142530082265,7,3
+6,RTU,DE0829,Software Security,Cybersecurity Engineering,0.48162002951172805,0.1387365603005311,0.4324309828460234,5,3
+7,RTU,IV0535,Customs and Security Processes in Supply Chains,Logistics and Supply Chain Security,0.32729792973579896,0.5052895202728961,0.4152358209497683,13,2
+8,RTU,DE0830,Engineering Systems Security,Cybersecurity Engineering,0.4379681244706674,0.14547260244397425,0.412625842968526,7,3
+9,RTU,IV0539,Quality and Environmental Management,Logistics and Supply Chain Security,0.2104634439179444,0.6191545403514832,0.39097808406441714,13,2
+10,RTU,DE0566,Information Systems Security,Finance Management Information Systems,0.3094831849645438,0.2834319271125696,0.38977117061604283,8,3

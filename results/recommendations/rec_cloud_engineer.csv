@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,TSI,B-74-01,Cloud Computing & Internet of Things,Computer Science,1.0,0.6498121680556156,0.8449436504166847,24,3
+2,RTU,LA1473,Cloud Computing,Information Technology,0.8314445879256667,0.13938425666047757,0.5575375709609766,6,2
+3,RTU,LA0664,Cloud Computing,Computer Science,0.8099840669181747,0.13938425666047757,0.5468073104572306,6,2
+4,RTU,DE0609,Cloud Computing,Finance Management Information Systems,0.6974717530645205,0.30415821063085624,0.5399833397215171,8,2
+5,TSI,B-02-04,Compiler Construction,Computer Science,0.12142276257281139,0.8964981216805561,0.5296608177905725,19,4
+6,RTU,LA0934,Cloud Computing Architecture and Applications,Information Technology,0.6358505550238825,0.10777667429509045,0.5002582798004684,6,3
+7,TSI,B-02-04,Introduction to Speciality,Computer Science,0.0,0.8964981216805561,0.4689494365041668,19,4
+8,TSI,B-925-09,Electronics and Microprocesor,Computer Science,0.30610288235330874,0.5201433567943348,0.4590944482149548,16,3
+9,RTU,IV0762,Business Data Processing Automation,Entrepreneurship and Management,0.3345406827577233,0.5609482274709615,0.43555480962015014,9,2
+10,TSI,B-925-03,Python Programing,Computer Science,0.48940846879044086,0.4409948616088778,0.4270026928778838,10,1

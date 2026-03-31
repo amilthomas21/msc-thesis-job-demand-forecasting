@@ -1,0 +1,31 @@
+career_goal,model,Precision@3,NDCG@3,Precision@5,NDCG@5,Precision@10,NDCG@10
+Data Engineer,Content-Only,1.0,1.0,1.0,1.0,0.9,0.9842
+Data Engineer,Demand-Only,0.6667,0.6934,0.8,0.7606,0.6,0.7983
+Data Engineer,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Data Scientist,Content-Only,1.0,1.0,1.0,1.0,0.9,0.9972
+Data Scientist,Demand-Only,0.0,0.0,0.2,0.3869,0.3,0.5051
+Data Scientist,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Software Developer,Content-Only,0.3333,0.5,0.4,0.5438,0.7,0.6822
+Software Developer,Demand-Only,1.0,1.0,0.8,1.0,0.5,0.9818
+Software Developer,Hybrid (Ours),1.0,1.0,1.0,1.0,0.8,0.9852
+IT Project Manager,Content-Only,1.0,1.0,1.0,1.0,1.0,1.0
+IT Project Manager,Demand-Only,1.0,1.0,1.0,1.0,1.0,1.0
+IT Project Manager,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Cybersecurity Analyst,Content-Only,1.0,1.0,1.0,1.0,1.0,1.0
+Cybersecurity Analyst,Demand-Only,0.0,0.0,0.2,0.3869,0.2,0.4556
+Cybersecurity Analyst,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Business Analyst,Content-Only,1.0,1.0,1.0,1.0,0.6,0.9931
+Business Analyst,Demand-Only,1.0,1.0,1.0,1.0,1.0,1.0
+Business Analyst,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Cloud Engineer,Content-Only,1.0,1.0,1.0,1.0,1.0,1.0
+Cloud Engineer,Demand-Only,0.6667,0.6934,0.8,0.7606,0.5,0.7817
+Cloud Engineer,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Logistics Manager,Content-Only,1.0,1.0,1.0,1.0,1.0,1.0
+Logistics Manager,Demand-Only,1.0,1.0,1.0,1.0,1.0,1.0
+Logistics Manager,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+UX/UI Designer,Content-Only,1.0,1.0,1.0,1.0,1.0,1.0
+UX/UI Designer,Demand-Only,0.3333,1.0,0.6,0.8529,0.4,0.8486
+UX/UI Designer,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0
+Network Engineer,Content-Only,1.0,1.0,0.6,1.0,0.8,0.9425
+Network Engineer,Demand-Only,0.0,0.0,0.4,0.5013,0.4,0.5883
+Network Engineer,Hybrid (Ours),1.0,1.0,1.0,1.0,1.0,1.0

@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,DE0836,Network Security,Cybersecurity Engineering,1.0,0.1553175871151604,0.746595276134548,8,5
+2,RTU,DE0748,Network Security Requirements,Business Informatics,0.8314048771806694,0.09059113087784446,0.6428797778536881,11,5
+3,RTU,DE0086,Computer Network Monitoring Diagnostics and Maintenance,Telecommunication Technologies and Data Transmission Engineering,0.4351233100242132,0.7654907379420527,0.5272088763947225,9,2
+4,RTU,DE0182,Network Databases and Databanks,Telecommunication Technologies and Data Transmission Engineering,0.21597997030454041,0.8959367848352693,0.456771020602851,14,2
+5,RTU,DE0355,Mobile Network Architecture,Telecommunication Technologies and Data Transmission Engineering,0.22910971670720123,0.7784446651409819,0.42808825789589516,13,2
+6,RTU,IV0535,Customs and Security Processes in Supply Chains,Logistics and Supply Chain Security,0.24554373796083695,0.5052895202728961,0.3543587250622873,13,2
+7,RTU,IV0539,Quality and Environmental Management,Logistics and Supply Chain Security,0.1578927821677286,0.6191545403514832,0.34469275318930925,13,2
+8,RTU,DE0215,Data Transmission in Wireless Sensor Networks,Smart Electronic Systems,0.31917635958611423,0.3289002115808109,0.3382582432673004,5,2
+9,RTU,DE0828,Information Security and Personal Data Protection,Cybersecurity Engineering,0.15988310303631614,0.45830994429811306,0.337434534807592,8,3
+10,RTU,DE0839,Telecommunications Network Management,Telecommunication Technologies and Networks Management,0.24265161947155256,0.43775637980914545,0.3326527236785199,8,2

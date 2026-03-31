@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,DE0775,Basics of Logistics and Supply Chain Management,Logistics and Supply Chain Management,1.0,0.34867654043784274,0.7546029621313528,7,3
+2,RTU,IV0533,Management of International Transportation,Logistics and Supply Chain Security,0.8834276691332346,0.47381147717949823,0.7338572777204667,11,3
+3,RTU,IV0536,Supply Chain Strategy Management,Logistics and Supply Chain Security,0.8444767856293179,0.47381147717949823,0.7143818359685085,11,3
+4,RTU,IV0535,Customs and Security Processes in Supply Chains,Logistics and Supply Chain Security,0.807332685524444,0.5052895202728961,0.7052531988440909,13,3
+5,RTU,IV0531,Business Logistics,Logistics and Supply Chain Security,0.7841880833315127,0.48210199058681286,0.6867246388418002,12,3
+6,RTU,DE0784,Supply Chain Network Management Technologies,Logistics and Supply Chain Management,0.85010826125681,0.3657757243404292,0.6847868479305338,9,3
+7,RTU,DE0777,Logistics Information Systems,Logistics and Supply Chain Management,0.8068812862607045,0.3554125825812859,0.660064417904738,9,3
+8,RTU,DE0654,Logistics Systems Management,Logistics and Supply Chain Security,0.72474340331799,0.48054751932294143,0.6565359574558775,13,3
+9,RTU,DE0782,Information Technologies in Logistics,Logistics and Supply Chain Management,0.796661950385381,0.34867654043784274,0.6529339373240434,7,3
+10,RTU,DE0788,Systems Analysis,Logistics and Supply Chain Management,0.7762628446134628,0.3813204369791442,0.6525275534004747,10,3

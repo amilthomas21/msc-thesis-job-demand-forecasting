@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,RTU,IV0701,Information Technology and Business Data Analysis,Entrepreneurship and Management,0.8513138706842556,0.5572779480979317,0.7928403197715073,7,3
+2,RTU,BS0029,Financial Reporting and Analysis,International Business Management,0.7441714669354295,0.671661125264476,0.7735840710470576,14,3
+3,TSI,B-734-02,Individual project -2,Computer Science,0.34211743087405555,0.8317284856859104,0.6205772611428009,23,3
+4,TSI,B-024-04,Methods of Computer Procesing of Statistical Data,Computer Science,0.6797806436430246,0.42277300401571744,0.6000555563595609,11,2
+5,RTU,LA0929,Business Analysis,Information Technology,1.0,0.08640269441685737,0.5925874749917238,4,1
+6,TSI,M-405-01,Student Project,Computer Science,0.3081510379375117,1.0,0.5874088523020892,15,2
+7,TSI,M-232-04,Busines Inteligence and Data Visualisation,Computer Science,0.3847080404509637,0.5836176000690876,0.5674393002462081,14,3
+8,TSI,B-02-04,Compiler Construction,Computer Science,0.17644451596769353,0.8964981216805561,0.5571716944880136,19,3
+9,TSI,B-17-04,Software Project Management,Computer Science,0.7017088563369699,0.4258819465434604,0.5452856787981897,12,1
+10,TSI,B-02-04,Introduction to Speciality,Computer Science,0.14528485260642307,0.8964981216805561,0.5415918628073784,19,3

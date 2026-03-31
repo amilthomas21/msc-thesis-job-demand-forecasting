@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,TSI,B-024-04,Methods of Computer Procesing of Statistical Data,Computer Science,0.8892306783020998,0.42277300401571744,0.7214472403557651,11,3
+2,TSI,B-739-01,Data Science Fundamentals,Computer Science,0.7457845550937305,0.3991104969990068,0.6926254266465672,7,4
+3,RTU,DE0941,Deep Machine Learning,Computer Systems,1.0,0.0356664795543849,0.6106999438663154,4,2
+4,RTU,LA0953,Introduction to Deep Machine Learning,Information Technology,0.9061917394127874,0.07491687896714021,0.5755709333965358,3,2
+5,RTU,IV0701,Information Technology and Business Data Analysis,Entrepreneurship and Management,0.5754945598171523,0.5572779480979317,0.5549306643379557,7,2
+6,TSI,B-925-03,Python Programing,Computer Science,0.6273014234669374,0.4409948616088778,0.545949170216132,10,2
+7,TSI,B-734-02,Individual project -2,Computer Science,0.2427842403753426,0.8317284856859104,0.5209106658934444,23,3
+8,RTU,DE0940,Business Analytics with Machine Learning,Business Informatics,0.5888119033689975,0.18835010147242973,0.5009109821262276,8,3
+9,TSI,M-26-04,Modern Database Technologies,Computer Science,0.3132137059197948,0.7409646357787469,0.47889624369352146,14,2
+10,TSI,M-404-01,Economics of Artificial Inteligence,Computer Science,0.19593556826478487,0.7542208212789844,0.47423403051608776,21,3

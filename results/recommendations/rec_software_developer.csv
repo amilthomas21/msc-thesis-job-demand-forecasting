@@ -1,0 +1,11 @@
+rank,university,course_code,course_name,programme,content_score_norm,demand_score_norm,final_score,num_skills,target_skill_count
+1,TSI,B-77-04,Web Aplication Development Tols,Computer Science,0.8637727874787211,0.9078112181009543,0.8542297591696469,20,3
+2,RTU,LA1329,Web Programming,Computer Science,0.7877480683136937,0.2523425018351397,0.6695767847073888,12,4
+3,TSI,B-245-04,Aplication development with Java,Computer Science,0.7091829325935037,0.7022755732112785,0.6652741382601354,18,2
+4,RTU,LA1474,Web Programming,Information Technology,0.7742588502221037,0.2523425018351397,0.6628321756615938,12,4
+5,TSI,B-33-04,Web Aplication Construction,Computer Science,0.7540879881445954,0.43469061703873224,0.6574511791839174,22,3
+6,TSI,B-925-03,Python Programing,Computer Science,0.5559446142203531,0.4409948616088778,0.56027076559284,10,3
+7,RTU,LA1466,Software Engineering,Information Technology,1.0,0.14832246642773866,0.5444967399283216,2,0
+8,RTU,DE0284,Software Engineering,Computer Systems,0.9680994050541438,0.10907206701498337,0.5167713226315669,3,0
+9,TSI,B-734-02,Individual project -2,Computer Science,0.1970293883727476,0.8317284856859104,0.49803323989214693,23,3
+10,RTU,DE0362,The C Programming Language,Telecommunication Technologies and Data Transmission Engineering,0.30456377207332963,0.806036530074701,0.49409284505907514,12,2
