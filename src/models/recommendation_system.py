@@ -21,8 +21,19 @@ import re
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+# ── Absolute base path (works locally AND on Streamlit Cloud) ──────────────────
+# This file is at: src/models/recommendation_system.py
+# So BASE_DIR goes up 2 levels to reach the repo root
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
+
+
+def data_path(filename):
+    """Returns the absolute path to a file in data/processed/"""
+    return os.path.join(DATA_DIR, filename)
+
+
 # ── Career goal profiles ───────────────────────────────────────────────────────
-# Each career maps to a set of relevant skills and keywords
 CAREER_PROFILES = {
     "Data Engineer": {
         "keywords": "python sql data pipeline etl spark hadoop cloud aws azure "
@@ -94,7 +105,8 @@ DEMAND_TIER_WEIGHTS = {
 
 
 def load_data():
-    tsi = pd.read_csv('data/processed/tsi_courses.csv')
+    # ── FIXED: use absolute paths so Streamlit Cloud can find the files ──
+    tsi = pd.read_csv(data_path('tsi_courses.csv'))
     tsi = tsi.rename(columns={'code': 'course_code', 'title': 'course_name'})
     tsi['university'] = 'TSI'
     tsi['programme']  = 'Computer Science'
@@ -104,7 +116,7 @@ def load_data():
         tsi.get('description', pd.Series([''] * len(tsi))).fillna('')
     )
 
-    rtu = pd.read_csv('data/processed/rtu_courses_final.csv')
+    rtu = pd.read_csv(data_path('rtu_courses_final.csv'))
     rtu['match_text'] = (
         rtu['course_name'].fillna('') + ' ' +
         rtu['programme'].fillna('') + ' ' +
@@ -112,14 +124,12 @@ def load_data():
     )
 
     courses = pd.concat([
-        tsi[['university', 'course_code', 'course_name', 'match_text',
-             'programme']],
-        rtu[['university', 'course_code', 'course_name', 'match_text',
-             'programme']]
+        tsi[['university', 'course_code', 'course_name', 'match_text', 'programme']],
+        rtu[['university', 'course_code', 'course_name', 'match_text', 'programme']]
     ], ignore_index=True)
 
-    matches  = pd.read_csv('data/processed/course_skill_matches.csv')
-    coverage = pd.read_csv('data/processed/skill_coverage.csv')
+    matches  = pd.read_csv(data_path('course_skill_matches.csv'))
+    coverage = pd.read_csv(data_path('skill_coverage.csv'))
 
     return courses, matches, coverage
 
@@ -129,7 +139,6 @@ def get_course_demand_score(courses_df, matches_df, coverage_df):
     For each course: compute a demand score based on
     how many high-demand skills it covers and their weights.
     """
-    # Merge matches with demand tier
     m = matches_df.merge(
         coverage_df[['skill', 'demand_tier', 'frequency']],
         on='skill', how='left'
@@ -144,7 +153,6 @@ def get_course_demand_score(courses_df, matches_df, coverage_df):
         .rename(columns={'weighted_score': 'demand_score'})
     )
 
-    # Normalise to 0-1
     max_score = demand_scores['demand_score'].max()
     if max_score > 0:
         demand_scores['demand_score_norm'] = demand_scores['demand_score'] / max_score
@@ -154,82 +162,54 @@ def get_course_demand_score(courses_df, matches_df, coverage_df):
     return demand_scores
 
 
-def recommend(career_goal: str,
-              courses_df: pd.DataFrame,
-              matches_df: pd.DataFrame,
-              coverage_df: pd.DataFrame,
-              university_filter: str = 'Both',
-              top_k: int = 10,
-              alpha: float = 0.6) -> pd.DataFrame:
-    """
-    Recommend courses for a given career goal.
+def recommend(career_goal,
+              courses_df,
+              matches_df,
+              coverage_df,
+              university_filter='Both',
+              top_k=10):
 
-    Parameters
-    ----------
-    career_goal     : free-text or predefined career name
-    courses_df      : course catalogue
-    matches_df      : skill-course matches
-    coverage_df     : skill coverage with demand tiers
-    university_filter: 'TSI', 'RTU', or 'Both'
-    top_k           : number of recommendations to return
-    alpha           : weight for content score (1-alpha = demand weight)
-    """
-
-    # ── Get career keywords ────────────────────────────────────────
     if career_goal in CAREER_PROFILES:
-        query_text  = CAREER_PROFILES[career_goal]['keywords']
+        query_text   = CAREER_PROFILES[career_goal]['keywords']
         target_skills = CAREER_PROFILES[career_goal]['top_skills']
     else:
-        # Free text input — use as-is
-        query_text    = career_goal.lower()
+        query_text   = career_goal.lower()
         target_skills = []
 
-    # ── Filter by university ───────────────────────────────────────
     if university_filter != 'Both':
         filtered = courses_df[courses_df['university'] == university_filter].copy()
     else:
         filtered = courses_df.copy()
 
-    if filtered.empty:
-        print(f"No courses found for university filter: {university_filter}")
-        return pd.DataFrame()
-
     filtered = filtered.reset_index(drop=True)
 
-    # ── Layer 1: TF-IDF content similarity ────────────────────────
-    all_docs  = filtered['match_text'].tolist() + [query_text]
+    # ── TF-IDF similarity ─────────────────────────────
+    all_docs = filtered['match_text'].tolist() + [query_text]
+
     vectorizer = TfidfVectorizer(
         ngram_range=(1, 2),
         stop_words='english',
-        max_features=8000,
+        max_features=8000
     )
-    tfidf_matrix = vectorizer.fit_transform(all_docs)
-    course_vecs  = tfidf_matrix[:-1]
-    query_vec    = tfidf_matrix[-1]
 
+    tfidf = vectorizer.fit_transform(all_docs)
+    course_vecs   = tfidf[:-1]
+    query_vec     = tfidf[-1]
     content_scores = cosine_similarity(query_vec, course_vecs).flatten()
+
     filtered['content_score'] = content_scores
-
-    # Normalise
     max_cs = content_scores.max()
-    if max_cs > 0:
-        filtered['content_score_norm'] = content_scores / max_cs
-    else:
-        filtered['content_score_norm'] = 0
+    filtered['content_score_norm'] = content_scores / max_cs if max_cs > 0 else 0
 
-    # ── Layer 2: Demand-aware re-ranking ──────────────────────────
+    # ── Demand score ─────────────────────────────────
     demand_scores = get_course_demand_score(filtered, matches_df, coverage_df)
-    filtered = filtered.merge(demand_scores[['course_code', 'demand_score_norm']],
-                               on='course_code', how='left')
+    filtered = filtered.merge(
+        demand_scores[['course_code', 'demand_score_norm']],
+        on='course_code', how='left'
+    )
     filtered['demand_score_norm'] = filtered['demand_score_norm'].fillna(0)
 
-    # ── Combined score ─────────────────────────────────────────────
-    filtered['final_score'] = (
-        alpha       * filtered['content_score_norm'] +
-        (1 - alpha) * filtered['demand_score_norm']
-    )
-
-    # ── Get skills covered per course ─────────────────────────────
+    # ── Skills covered per course ────────────────────
     course_skills = (
         matches_df.groupby('course_code')['skill']
         .apply(list)
@@ -242,21 +222,31 @@ def recommend(career_goal: str,
     )
     filtered['num_skills'] = filtered['skills_covered'].apply(len)
 
-    # ── Highlight target skills ────────────────────────────────────
+    # ── Target skill coverage ────────────────────────
     filtered['matched_target_skills'] = filtered['skills_covered'].apply(
         lambda skills: [s for s in skills if s in target_skills]
     )
     filtered['target_skill_count'] = filtered['matched_target_skills'].apply(len)
 
-    # ── Rank and return top K ──────────────────────────────────────
+    max_targets = filtered['target_skill_count'].max()
+    filtered['skill_coverage_norm'] = (
+        filtered['target_skill_count'] / max_targets if max_targets > 0 else 0
+    )
+
+    # ── FINAL HYBRID SCORE ────────────────────────────
+    filtered['final_score'] = (
+        0.5 * filtered['content_score_norm'] +
+        0.3 * filtered['demand_score_norm'] +
+        0.2 * filtered['skill_coverage_norm']
+    )
+
     results = (
         filtered
         .sort_values('final_score', ascending=False)
         .head(top_k)
         .reset_index(drop=True)
     )
-    results.index += 1  # 1-based ranking
-
+    results.index += 1
     return results
 
 
@@ -272,8 +262,7 @@ def print_recommendations(results: pd.DataFrame, career_goal: str):
         print(f"{rank:<5} {row['university']:<5} {course:<42} "
               f"{row['final_score']:.3f}  {row['num_skills']:>4}")
 
-    print()
-    print("Top 3 in detail:")
+    print("\nTop 3 in detail:")
     for rank, row in results.head(3).iterrows():
         print(f"\n  #{rank} [{row['university']}] {row['course_name']}")
         print(f"     Programme:      {row['programme']}")
@@ -286,43 +275,31 @@ def print_recommendations(results: pd.DataFrame, career_goal: str):
 
 
 def evaluate_recommendations(results: pd.DataFrame,
-                               career_goal: str,
-                               coverage_df: pd.DataFrame,
-                               k_values=[3, 5, 10]) -> dict:
-    """
-    Compute Precision@K and NDCG@K.
-    Relevance = course covers at least one High Demand skill
-    related to the career goal.
-    """
+                              career_goal: str,
+                              coverage_df: pd.DataFrame,
+                              k_values=[3, 5, 10]) -> dict:
     if career_goal in CAREER_PROFILES:
         target_skills = set(CAREER_PROFILES[career_goal]['top_skills'])
     else:
         target_skills = set()
 
-    high_demand = set(
-        coverage_df[coverage_df['demand_tier'] == 'High Demand']['skill']
-    )
-
     def is_relevant(row):
         covered = set(row['skills_covered'])
-        return bool(covered & target_skills) or bool(covered & high_demand)
+        return bool(covered & target_skills)
 
     results['relevant'] = results.apply(is_relevant, axis=1).astype(int)
 
     metrics = {'career_goal': career_goal}
-
     for k in k_values:
         top_k = results.head(k)
-        # Precision@K
         precision = top_k['relevant'].sum() / k
         metrics[f'Precision@{k}'] = round(precision, 4)
 
-        # NDCG@K
-        rels = top_k['relevant'].tolist()
-        dcg  = sum(r / np.log2(i + 2) for i, r in enumerate(rels))
+        rels      = top_k['relevant'].tolist()
+        dcg       = sum(r / np.log2(i + 2) for i, r in enumerate(rels))
         ideal_rels = sorted(rels, reverse=True)
-        idcg = sum(r / np.log2(i + 2) for i, r in enumerate(ideal_rels))
-        ndcg = dcg / idcg if idcg > 0 else 0
+        idcg      = sum(r / np.log2(i + 2) for i, r in enumerate(ideal_rels))
+        ndcg      = dcg / idcg if idcg > 0 else 0
         metrics[f'NDCG@{k}'] = round(ndcg, 4)
 
     return metrics
@@ -337,11 +314,12 @@ def main():
     print(f"Courses loaded: {len(courses)} "
           f"({courses['university'].value_counts().to_dict()})")
 
-    os.makedirs('results/recommendations', exist_ok=True)
+    # ── Use absolute path for output too ──────────────────────────
+    output_dir = os.path.join(BASE_DIR, 'results', 'recommendations')
+    os.makedirs(output_dir, exist_ok=True)
 
     all_metrics = []
 
-    # ── Run for all predefined careers ────────────────────────────
     for career in CAREER_PROFILES.keys():
         results = recommend(
             career_goal=career,
@@ -350,7 +328,6 @@ def main():
             coverage_df=coverage,
             university_filter='Both',
             top_k=10,
-            alpha=0.6
         )
 
         if results.empty:
@@ -358,22 +335,24 @@ def main():
 
         print_recommendations(results, career)
 
-        # Save recommendations
         save_cols = ['university', 'course_code', 'course_name', 'programme',
                      'content_score_norm', 'demand_score_norm', 'final_score',
                      'num_skills', 'target_skill_count']
+
+        safe_name = re.sub(r'[^\w\s]', '', career).strip().replace(' ', '_').lower()
         results[save_cols].to_csv(
-            f"results/recommendations/rec_{re.sub(r'[^\w\s]', '', career).strip().replace(' ', '_').lower()}.csv",
+            os.path.join(output_dir, f"rec_{safe_name}.csv"),
             index_label='rank'
         )
 
-        # Evaluate
         metrics = evaluate_recommendations(results, career, coverage)
         all_metrics.append(metrics)
 
-    # ── Evaluation summary ─────────────────────────────────────────
     metrics_df = pd.DataFrame(all_metrics)
-    metrics_df.to_csv('results/recommendations/evaluation_metrics.csv', index=False)
+    metrics_df.to_csv(
+        os.path.join(output_dir, 'evaluation_metrics.csv'),
+        index=False
+    )
 
     print("\n" + "=" * 65)
     print("EVALUATION METRICS SUMMARY")
@@ -386,14 +365,11 @@ def main():
     numeric_cols = [c for c in metrics_df.columns if c != 'career_goal']
     print(metrics_df[numeric_cols].mean().round(4).to_string())
 
-    # ── Interactive mode ───────────────────────────────────────────
     print("\n" + "=" * 65)
     print("INTERACTIVE MODE — Try your own career goal")
     print("=" * 65)
-    print("Available careers:")
     for i, c in enumerate(CAREER_PROFILES.keys(), 1):
         print(f"  {i}. {c}")
-    print(f"  {len(CAREER_PROFILES)+1}. Type a custom goal")
 
     try:
         choice = input("\nEnter number or type goal (or 'skip' to exit): ").strip()
@@ -403,10 +379,7 @@ def main():
         if choice.isdigit():
             idx = int(choice) - 1
             careers = list(CAREER_PROFILES.keys())
-            if 0 <= idx < len(careers):
-                goal = careers[idx]
-            else:
-                goal = choice
+            goal = careers[idx] if 0 <= idx < len(careers) else choice
         else:
             goal = choice
 
@@ -420,8 +393,7 @@ def main():
             matches_df=matches,
             coverage_df=coverage,
             university_filter=uni,
-            top_k=10,
-            alpha=0.6
+            top_k=10
         )
         print_recommendations(results, goal)
 
