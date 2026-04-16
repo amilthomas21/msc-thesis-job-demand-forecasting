@@ -1,5 +1,5 @@
 # msc-thesis-job-demand-forecasting
-# "Job Market Skill Demand Forecasting and Skill-Based Course Recommendation Framework"
+# "Job Market Skill Demand Analysis and Skill-Based Course Recommendation Framework"
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -12,348 +12,133 @@
 **Supervisor:** Nadežda Spiridovska  
 **Student ID:** st87613  
 🎯 Project Overview
-This research develops a generalizable AI-based framework that:
+This research develops a data-driven, demand-aware course recommendation framework for the Riga, Latvia job market. The framework extracts skill demand signals from real job postings, maps them against university course offerings, identifies curriculum gaps, and recommends relevant courses to students based on their career goals and current market demand.
+Live Dashboard: https://msc-thesis-job-demand-forecasting-nzbbgbtc4nrdhg2p9wszv5.streamlit.app
+Case Study: Two Riga universities — Transport and Telecommunication Institute (TSI) and Riga Technical University (RTU).
 
-Forecasts skill demand trends in regional job markets using time series analysis
-Maps job market skills to university course content systematically
-Recommends personalized, demand-aware courses to students based on labor market needs
-Analyzes curriculum coverage of in-demand skills
+📊 Key Results
+MetricValueJob postings collected3,057 (CV.lv: 2,416 · SS.lv: 641)Collection periodSeptember 2025 – February 2026Languages processedEnglish, Latvian, RussianUnique skills identified321 across 17 categoriesTotal skill mentions11,159Pipeline coverage rate85.4%TSI courses112RTU courses497Total courses609Skill-course mappings3,205High-demand skills covered77% (63 of 82)Critical gaps identified12 high-demand skills (Docker, Kubernetes, 1C, etc.)Hybrid model Precision@51.000 (+11.1% vs content-only baseline)Hybrid model NDCG@51.000 (+47.1% vs demand-only baseline)Career profiles evaluated10References63
 
-Case Study Implementation: TSI (Transport and Telecommunication Institute) using Riga/Latvia job market data
-Problem Statement
-Universities struggle to align curricula with rapidly evolving job market demands. Traditional curriculum planning relies on historical enrollment trends, making it difficult to respond to changing skill requirements. Students also lack guidance on which courses best prepare them for employment in their regional job market.
-Solution
-A data-driven framework that combines:
+Note on evaluation scores: Precision@5 = 1.000 reflects internal system consistency under a closed evaluation design (relevance labels share the same source as the ranking signal). These scores should be interpreted as relative comparisons between the three models, not as generalised predictive performance. See Section 4.5.3 of the thesis for full discussion.
 
-Real-time job market analytics from Riga, Latvia (1,500-2,000 job postings)
-NLP-based skill extraction from job descriptions
-Time series forecasting of skill demand trends
-TF-IDF + cosine similarity for skill-to-course mapping
-Demand-aware course recommendation system
-
-Key Innovation: Integrating external labor market signals with educational course planning to create a generalizable framework applicable to any university and regional market.
 
 🔬 Research Questions
 
-RQ1: Which skills show the highest growth in the Riga job market?
-RQ2: How can job market skill trends be systematically mapped to university course content?
-RQ3: How well does TSI's current curriculum cover in-demand skills?
-RQ4: Can a skill-based recommendation framework effectively guide students' course selection?
+RQ1: What skills are most frequently demanded by employers in the Riga labour market, and how do they distribute across demand levels and domains?
+RQ2: How do the curricula of TSI and RTU align with Riga labour market skill demands, and which high-demand skills are absent from both institutions?
+RQ3: Can a hybrid demand-aware recommendation system incorporating TF-IDF content similarity, market demand scoring, and skill coverage scoring provide more relevant course recommendations than content-based or demand-based approaches alone?
 
 
 🛠️ Methodology
-Data Sources
-Job Market Data:
+Data Collection
+Job posting data was collected from two major Latvian employment portals:
 
-SS.lv (Latvia's largest classifieds platform)
-CV.lv (Professional job portal)
-LikeIT.lv (IT-specific jobs)
-VisiDarbi.lv (Job aggregator)
-Target: 1,500-2,000 job postings from Riga
-Categories: IT, Engineering, Transport, Business, Economics, Design
+CV.lv — Latvia's largest professional job portal (2,416 postings)
+SS.lv — Latvia's largest classified advertisement platform (641 postings)
 
-TSI Course Data:
-
-Course descriptions
-Learning outcomes
-Syllabi
-Program structures
-
-Skill Demand Forecasting
-
-Method: Time series analysis of historical skill frequency data
-Techniques: Trend analysis, growth rate calculation
-Output: Identification of emerging and declining skills
-
-General Framework Development
-Skill-to-Course Mapping:
-
-TF-IDF vectorization of job postings and course descriptions
-Cosine similarity for matching skill vocabulary to course content
-Skill taxonomy and standardization
-Demand-aware ranking mechanisms
-
-TSI Case Study Implementation
-Components:
-
-Skill extraction from Riga job postings using keyword dictionaries
-Skill demand trend forecasting
-Course content parsing and skill identification
-Skill-to-course mapping matrix construction
-Recommendation system with demand-aware re-ranking
-Curriculum coverage analysis
-
-Recommendation System
-
-Method: Content-based filtering using TF-IDF and cosine similarity
-Innovation: Demand-aware re-ranking using forecasted skill growth rates
-Constraints: Rule-based (prerequisites, academic level requirements)
-Evaluation: Precision@K, NDCG@K, user relevance assessment
-
-Skill Extraction
-
-Lightweight NLP methods (keyword-based dictionaries)
-Predefined skill taxonomies (Python, SQL, Machine Learning, Project Management, etc.)
-Skill-to-course mapping using document similarity techniques
-
+Multilingual Skill Extraction Pipeline (4 Layers)
+LayerMethodTargetCoverage Added1English keyword matching (438 terms)English postings74.1%2Latvian inflection-aware matching (318 terms)Latvian postings+5.7%3TF-IDF cosine similarityAll postings+3.4%4Fuzzy string matching (85% threshold)Russian/typos+2.2%TotalCombined pipelineAll languages85.4%
+Skill Demand Analysis
+Skills are classified into 17 categories and assigned to demand tiers (High / Moderate / Low) based on frequency across the 3,057-posting corpus. Top skills: Excel, Communication skills, Customer service, Accounting, Financial analysis.
+Skill-to-Course Mapping
+Two-layer mapping combining keyword matching and TF-IDF cosine similarity (threshold: 0.15) against 609 courses from TSI and RTU, producing 3,205 skill-course correspondences.
+Hybrid Recommendation System
+Three-component weighted scoring:
+FinalScore = 0.5 × ContentSim + 0.3 × DemandScore + 0.2 × SkillCoverage
+Evaluated across 10 career profiles: Data Engineer, Data Scientist, Software Developer, IT Project Manager, Cybersecurity Analyst, Business Analyst, Cloud Engineer, Logistics Manager, UX/UI Designer, Network Engineer.
 
 📁 Repository Structure
 msc-thesis-job-demand-forecasting/
 │
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── .gitignore                  # Files to exclude from git
-├── LICENSE                     # MIT License
-├── CHANGELOG.md                # Project progress tracking
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+├── CHANGELOG.md
 │
-├── data/                       # Data files (not tracked in git)
-│   ├── raw/                    # Original scraped job postings
-│   ├── processed/              # Cleaned and skill-extracted data
-│   └── tsi_courses/            # TSI course descriptions and metadata
+├── data/                          # Data files (excluded from git)
+│   ├── raw/                       # Original scraped job postings
+│   └── processed/                 # Cleaned and skill-extracted data
+│       ├── master_jobs_clean.csv
+│       ├── job_skills_v4.csv
+│       ├── skill_demand_v4.csv
+│       ├── tsi_courses.csv
+│       ├── rtu_courses_final.csv
+│       └── course_skill_matches.csv
 │
-├── src/                        # Source code
-│   ├── data_collection/        # Web scrapers
+├── src/
+│   ├── data_collection/           # Web scrapers
 │   │   ├── ss_lv_scraper.py
-│   │   ├── cv_lv_scraper.py
-│   │   ├── likeIT_lv.py
-│   │   └── VisiDarbi_lv.py
-│   │
-│   ├── data_processing/        # Data cleaning and feature engineering
-│   │   ├── cleaner.py
-│   │   ├── skill_extractor.py
-│   │   └── skill_mapper.py
-│   │
-│   ├── models/                 # Forecasting and recommendation models
-│   │   ├── skill_forecasting.py
-│   │   ├── tfidf_mapper.py
+│   │   └── cv_lv_scraper.py
+│   ├── data_processing/           # Cleaning and skill extraction
+│   │   ├── clean_data.py
+│   │   ├── extract_skills_v4.py
+│   │   ├── skill_keywords_v3.py
+│   │   └── latvian_skills.py
+│   ├── analysis/                  # Gap analysis and network
+│   │   ├── frequency_analysis.py
+│   │   ├── course_skill_mapping.py
+│   │   ├── gap_analysis.py
+│   │   └── skill_network.py
+│   ├── models/                    # Recommendation system
 │   │   └── recommendation_system.py
-│   │
-│   └── visualization/          # Plots and dashboard
-│       ├── plots.py
-│       └── dashboard.py
+│   └── evaluation/                # Baseline comparison
+│       └── baseline_comparison.py
 │
-├── notebooks/                  # Jupyter notebooks for exploration
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_skill_extraction.ipynb
-│   ├── 03_skill_forecasting.ipynb
-│   └── 04_recommendations.ipynb
+├── dashboard/                     # Streamlit dashboard
+│   └── app.py
 │
-├── results/                    # Model outputs and metrics
-│   ├── skill_trends/
-│   ├── recommendations/
-│   ├── curriculum_analysis/
-│   └── evaluation_metrics.csv
+├── results/
+│   ├── figures/                   # All generated figures
+│   ├── tables/                    # CSV outputs
+│   ├── recommendations/           # Per-profile recommendation CSVs
+│   └── evaluation/                # Evaluation metrics
 │
-├── docs/                       # Documentation
-│   ├── thesis_proposal.pdf
-│   ├── conference_abstract.pdf
-│   └── methodology.md
-│
-└── tests/                      # Unit tests
-    └── test_scrapers.py
+└── docs/
+    └── thesis_proposal.pdf
 
-🚀 Installation & Setup
+🚀 Installation and Setup
 Prerequisites
 
-Python 3.8 or higher
-pip package manager
-Git
+Python 3.11+
+pip
 
-Installation
-
-Clone the repository:
-
+Install
 bashgit clone https://github.com/amilthomas21/msc-thesis-job-demand-forecasting.git
 cd msc-thesis-job-demand-forecasting
+python -m venv venv
+venv\Scripts\activate        # Windows
+source venv/bin/activate     # Mac/Linux
+pip install -r requirements.txt
+Run the Dashboard
+bashstreamlit run dashboard/app.py
+Or access the live version: https://msc-thesis-job-demand-forecasting-nzbbgbtc4nrdhg2p9wszv5.streamlit.app
 
-Create virtual environment (recommended):
+📦 Libraries Used
+ComponentLibraryVersionWeb scrapingBeautifulSoup4, Requests4.12, 2.31Language detectionlangdetect1.0.9Text processingNLTK, spaCy3.8, 3.6Fuzzy matchingfuzzywuzzy0.18TF-IDF and similarityscikit-learn1.3Network analysisNetworkX3.1DashboardStreamlit1.28Data manipulationpandas, numpy2.0, 1.24Visualisationmatplotlib, seaborn3.7, 0.12
+Full dependency list: requirements.txt
 
-bashpython -m venv venv
+🔑 Key Findings
 
-# Windows
-venv\Scripts\activate
-
-# Mac/Linux
-source venv/bin/activate
-
-Install dependencies:
-
-bashpip install -r requirements.txt
-
-Download NLTK data (for NLP):
-
-pythonpython -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
-
-💻 Usage
-1. Data Collection
-Scrape job postings from SS.lv:
-bashpython src/data_collection/ss_lv_scraper.py
-Expected output: data/raw/ss_lv_jobs.csv with ~800-1,000 job postings
-Scrape from other sources:
-bashpython src/data_collection/cv_lv_scraper.py
-python src/data_collection/likeIT_lv.py
-python src/data_collection/VisiDarbi_lv.py
-2. Data Processing & Skill Extraction
-Clean and extract skills:
-bashpython src/data_processing/cleaner.py
-python src/data_processing/skill_extractor.py
-3. Skill Demand Forecasting
-Analyze skill trends:
-bashpython src/models/skill_forecasting.py
-4. Skill-to-Course Mapping
-Map job market skills to TSI courses:
-bashpython src/models/tfidf_mapper.py
-5. Generate Recommendations
-Run recommendation system:
-bashpython src/models/recommendation_system.py
-6. Launch Dashboard
-Interactive visualization:
-bashstreamlit run src/visualization/dashboard.py
-
-📊 Technologies & Libraries
-Data Collection
-
-requests - HTTP requests
-beautifulsoup4 - HTML parsing
-selenium - Dynamic web scraping (if needed)
-
-Data Processing
-
-pandas - Data manipulation
-numpy - Numerical operations
-
-Natural Language Processing
-
-nltk - Text processing
-scikit-learn - TF-IDF vectorization, cosine similarity
-
-Forecasting & Analysis
-
-statsmodels - Time series analysis
-matplotlib, seaborn - Visualization
-
-Recommendation System
-
-scikit-learn - TF-IDF, cosine similarity
-pandas - Data manipulation
-
-Dashboard
-
-streamlit - Interactive web dashboard
-plotly - Interactive plots
+Top demanded skills in Riga: Excel (15.4%), Communication skills (11.7%), Customer service (10.7%), Accounting (9.7%), Financial analysis (8.1%)
+Language requirements: 67.4% require Latvian, 57.3% English, 9.1% Russian
+77% of high-demand skills are well covered by the combined TSI–RTU curriculum
+12 critical gaps exist in both curricula: Docker, Kubernetes, 1C, Microsoft Office, Technical support, Network administration, Troubleshooting, Microsoft Word, IT infrastructure, Contract management, PowerPoint, Technical drawing
+Hybrid model outperforms content-only baseline by 11.1% and demand-only baseline by 47.1% on Precision@5
 
 
-📈 Expected Results
+⚠️ Scope and Limitations
+This study is an applied case study conducted within the Riga, Latvia context. Both institutions (TSI and RTU) operate within the same city, labour market, and national educational system. While the methodology is designed to be institution-independent, broader generalisation to other regions or educational systems would require recalibration of the skill dictionary and revalidation of pipeline thresholds. This study should be understood as a regional proof-of-concept rather than a proven cross-regional system.
 
-[Results will be updated as the thesis progresses]
-
-Skill Demand Trends
-
-Top 10 growing skills in Riga job market
-Emerging vs. declining skill identification
-Temporal skill demand patterns
-
-TSI Curriculum Analysis
-
-Coverage percentage of in-demand skills
-Skill gap identification
-Course-skill mapping matrix
-
-Recommendation Performance
-
-Precision@K, NDCG@K metrics
-User relevance assessment
-Comparison with baseline content-based system
-
-
-📅 Project Timeline
-
-Feb 2026: Data collection, skill extraction
-Mar 2026: Skill forecasting, framework development
-Apr 2026: TSI implementation, conference presentation (RaTSiF-2026)
-May 2026: Evaluation, thesis writing, defense preparation
-
-
-🎓 Academic Contributions
-
-Generalizable Framework: Institution-independent methodology for skill forecasting and course mapping
-Novel Integration: Combining job market analytics with educational course planning
-Practical Tool: Skill-based recommendation system applicable across disciplines
-Empirical Validation: Evaluation of external labor market signals in curriculum analysis
-Decision Support: Insights for both students (course selection) and institutions (planning)
-
-
-🌍 Scope and Applicability
-General Framework
-The methodology is designed to be institution-agnostic and adaptable to:
-
-Any university or educational institution
-Any regional job market
-Students across all academic disciplines
-
-TSI Case Study
-TSI serves as proof-of-concept demonstrating framework effectiveness with:
-
-Real-world Riga/Latvia job market data
-Actual TSI course catalog
-Validation with local context
-
-Future Applicability
-Other institutions can adopt this framework by:
-
-Collecting job postings from their regional market
-Parsing their course catalog
-Applying the skill extraction and mapping methodology
-Implementing the recommendation system
-
-
-📝 Publications & Presentations
-
-RaTSiF-2026 Spring Conference (April 24, 2026)
-Abstract deadline: March 16, 2026
-Presentation: Job Market Skill Demand Forecasting Framework
-
+📝 Publication
+RaTSiF-2026 Spring Conference, April 24, 2026, TSI Riga
+"Job Market Skill Demand Analysis and Skill-Based Course Recommendation Framework"
 
 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License — see LICENSE for details.
 
-🙏 Acknowledgments
+🙏 Acknowledgements
+Supervisor: Nadežda Spiridovska, TSI Riga
+Institution: Transport and Telecommunication Institute (TSI), Riga, Latvia
 
-Supervisor: Nadežda Spiridovska (TSI)
-Institution: Transport and Telecommunication Institute (TSI), Riga
-Program: MSc Double Degree - Data Analytics and Artificial Intelligence
-Partner: University of the West of England (UWE Bristol)
-
-
-📧 Contact
-Amil Thomas
-MSc Student - Data Analytics & AI
-Transport and Telecommunication Institute
-Riga, Latvia
-
-GitHub: @amilthomas21
-Student ID: st87613
-
-
-📚 Key References
-Literature review includes 30 papers covering:
-
-Educational Data Mining and Learning Analytics
-Job Market Analytics and Skill Extraction
-Time Series Forecasting in Education
-Recommendation Systems
-TF-IDF and Information Retrieval
-
-Full bibliography available in thesis document.
-
-Last Updated: February 22, 2026
-Status: 🚧 Work in Progress - Data Collection Phase
-
-⭐ Project Highlights
-
-✅ 4 web scrapers implemented (SS.lv, CV.lv, LikeIT, VisiDarbi)
-✅ Professional repository structure
-✅ Comprehensive methodology documentation
-✅ 30-paper literature review completed
-⏳ Data collection in progress
-⏳ Framework implementation ongoing
+Last updated: April 2026 · Status: ✅ Complete
